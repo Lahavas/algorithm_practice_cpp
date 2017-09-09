@@ -7,7 +7,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 #### 문제
 
 * [Hello World](./Hello_World) [[2557번 상세보기](https://www.acmicpc.net/problem/2557)]
-* A+B [[1000번 상세보기](https://www.acmicpc.net/problem/1000)]
+* [A+B](./A+B) [[1000번 상세보기](https://www.acmicpc.net/problem/1000)]
 * A+B - 2 [[2558번 상세보기](https://www.acmicpc.net/problem/2558)]
 * A+B - 3 [[10950번 상세보기](https://www.acmicpc.net/problem/10950)]
 * A+B - 4 [[10951번 상세보기](https://www.acmicpc.net/problem/10951)]
