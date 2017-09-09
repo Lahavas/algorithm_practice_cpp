@@ -10,7 +10,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [A+B](./A+B) [[1000번 상세보기](https://www.acmicpc.net/problem/1000)]
 * [A+B - 2](./A+B_2) [[2558번 상세보기](https://www.acmicpc.net/problem/2558)]
 * [A+B - 3](./A+B_3) [[10950번 상세보기](https://www.acmicpc.net/problem/10950)]
-* A+B - 4 [[10951번 상세보기](https://www.acmicpc.net/problem/10951)]
+* [A+B - 4](./A+B_4) [[10951번 상세보기](https://www.acmicpc.net/problem/10951)]
 * A+B - 5 [[10952번 상세보기](https://www.acmicpc.net/problem/10952)]
 * A+B - 6 [[10953번 상세보기](https://www.acmicpc.net/problem/10953)]
 * A+B - 7 [[11021번 상세보기](https://www.acmicpc.net/problem/11021)]
