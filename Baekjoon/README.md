@@ -6,13 +6,13 @@ C++를 이용하여 백준 온라인 저지 관련 문제를 풀이한 Git 저�
 
 #### 초급 문제 풀이
 
-1. [알고리즘과 입출력](./Basic)
-2. [자료구조 1](./Basic)
-3. [다이나믹 프로그래밍 1](./Basic)
-4. [수학 1](./Basic)
-5. [정렬](./Basic)
-6. [그래프 1](./Basic)
-7. [트리 1](./Basic)
+1. [알고리즘과 입출력](./Basic/Algorithm_and_IO)
+2. [자료구조 1](./Basic/Data_Structure_1st)
+3. [다이나믹 프로그래밍 1](./Basic/Dynamic_Programming_1st)
+4. [수학 1](./Basic/Mathematics_1st)
+5. [정렬](./Basic/Sorting_1st)
+6. [그래프 1](./Basic/Graph_1st)
+7. [트리 1](./Basic/Tree_1st)
 
 #### 중급 문제 Part01 풀이
 
