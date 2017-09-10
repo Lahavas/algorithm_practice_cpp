@@ -15,7 +15,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [A+B - 6](./A+B_6) [[10953번 상세보기](https://www.acmicpc.net/problem/10953)]
 * [A+B - 7](./A+B_7) [[11021번 상세보기](https://www.acmicpc.net/problem/11021)]
 * [A+B - 8](./A+B_8) [[11022번 상세보기](https://www.acmicpc.net/problem/11022)]
-* 그대로 출력하기 [[11718번 상세보기](https://www.acmicpc.net/problem/11718)]
+* [그대로 출력하기](./Output_as_it_is)] [[11718번 상세보기](https://www.acmicpc.net/problem/11718)]
 * 그대로 출력하기 2 [[11719번 상세보기](https://www.acmicpc.net/problem/11719)]
 * 숫자의 합 [[11720번 상세보기](https://www.acmicpc.net/problem/11720)]
 * 열 개씩 끊어 출력하기 [[11721번 상세보기](https://www.acmicpc.net/problem/11721)]
