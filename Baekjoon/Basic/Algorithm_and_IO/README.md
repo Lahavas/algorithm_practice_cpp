@@ -18,4 +18,4 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [그대로 출력하기](./Output_as_it_is) [[11718번 상세보기](https://www.acmicpc.net/problem/11718)]
 * [그대로 출력하기 2](./Output_as_it_is_2) [[11719번 상세보기](https://www.acmicpc.net/problem/11719)]
 * [숫자의 합](./Number_of_total) [[11720번 상세보기](https://www.acmicpc.net/problem/11720)]
-* 열 개씩 끊어 출력하기 [[11721번 상세보기](https://www.acmicpc.net/problem/11721)]
+* [열 개씩 끊어 출력하기](./Devide_by_ten_letters) [[11721번 상세보기](https://www.acmicpc.net/problem/11721)]
