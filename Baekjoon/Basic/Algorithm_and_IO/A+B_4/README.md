@@ -15,7 +15,7 @@ int main() {
 
     int a = 0, b = 0;
 
-    while (cin >> a >> b) {
+    while ( cin >> a >> b ) {
         cout << a + b << endl;
     }
 
@@ -31,7 +31,7 @@ int main() {
 int main() {
     int a = 0, b = 0;
 
-    while (scanf("%d %d", &a, &b) != EOF) {
+    while ( scanf("%d %d", &a, &b) != EOF ) {
         printf("%d\n", a + b);
     }
 

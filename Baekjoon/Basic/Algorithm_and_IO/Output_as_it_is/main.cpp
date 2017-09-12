@@ -1,14 +1,12 @@
-#include <iostream>
-#include <string>
+#include <cstdio>
 
-using namespace std;
+#define MAX 101
 
-int main(void)
-{
-    string input;
+int main() {
+    char input[MAX];
 
-    while ( getline(cin, input) ) {
-        cout << input << endl;
+    while ( scanf("%[^\n]\n", input) != EOF ) {
+        printf("%s\n", input);
     }
 
     return 0;

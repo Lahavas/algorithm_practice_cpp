@@ -1,23 +1,13 @@
-#include <iostream>
-#include <string>
+#include <cstdio>
 
-using namespace std;
+#define MAX 101
 
-int main(void)
-{
-    string input;
-    cin >> input;
-
-    int cnt = 10;
-    for (int i = 0; i < input.size(); i++) {
-        cnt--;
-        cout << input.at(i);
-        
-        while (cnt == 0) {
-            cnt = 10;
-            cout << endl;
-        }
-    }
+int main() {
+    char input[MAX];
     
+    while ( scanf("%10s", input) == true) {
+        printf("%s\n", input);
+    }
+
     return 0;
 }

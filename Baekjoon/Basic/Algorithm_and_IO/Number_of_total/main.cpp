@@ -1,17 +1,15 @@
 #include <cstdio>
 
-int main(void)
-{
+int main() {
     int cnt;
     scanf("%d", &cnt);
 
     int sum = 0;
 
-    while (cnt--) {
-        int input;
-        scanf("%1d", &input);
-
-        sum += input;
+    while ( cnt-- ) {
+        int num;
+        scanf("%1d", &num);
+        sum += num;
     }
 
     printf("%d\n", sum);

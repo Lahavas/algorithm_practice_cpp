@@ -15,7 +15,7 @@ int main() {
 
     int a, b;
 
-    while (true) {
+    while ( true ) {
         cin >> a >> b;
         if (a == 0 && b == 0) {
             break;
@@ -36,7 +36,7 @@ int main() {
 int main() {
     int a, b;
 
-    while (true) {
+    while ( true ) {
         scanf("%d %d", &a, &b);
         if (a == 0 && b == 0) {
             break;
