@@ -1,17 +1,15 @@
-#include <iostream>
+#include <cstdio>
 
-using namespace std;
-
-int main(void)
+int main(void) 
 {
     int a, b;
 
     while (true) {
-        cin >> a >> b;
+        scanf("%d %d", &a, &b);
         if (a == 0 && b == 0) {
             break;
         } else {
-            cout << a + b << endl;
+            printf("%d\n", a + b);
         }
     }
 

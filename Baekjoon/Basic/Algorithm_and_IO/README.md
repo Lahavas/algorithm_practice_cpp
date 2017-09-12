@@ -4,7 +4,7 @@ Algorithm and Input/Output
 Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 ---------------------------------------------
 
-#### 문제
+### 문제
 
 * [Hello World](./Hello_World) [[2557번 상세보기](https://www.acmicpc.net/problem/2557)]
 * [A+B](./A+B) [[1000번 상세보기](https://www.acmicpc.net/problem/1000)]
@@ -19,3 +19,42 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [그대로 출력하기 2](./Output_as_it_is_2) [[11719번 상세보기](https://www.acmicpc.net/problem/11719)]
 * [숫자의 합](./Number_of_total) [[11720번 상세보기](https://www.acmicpc.net/problem/11720)]
 * [열 개씩 끊어 출력하기](./Divide_by_ten_letters) [[11721번 상세보기](https://www.acmicpc.net/problem/11721)]
+
+### 풀이 전 알아야 할 개념
+
+#### C++14의 입/출력
+
+C++14의 입출력 방법은 크게 두 가지가 있다.
+
+첫 번째는 C언어에서 사용한 표준 입출력 함수들을 사용하는 방법이다.
+
+이 경우에 cstdio라는 header 파일을 포함시켜주면 printf, scanf등의 함수를 사용할 수 있다.
+
+~~~ cpp
+#include <cstdio>
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+~~~
+
+두 번째는 cin, cout과 같은 c++에서 제공하는 입출력 함수들을 사용하는 방법이다.
+
+iostream이라는 header 파일을 포함시켜주면 사용할 수 있다.
+
+std namespace를 생략하기 위해 `using namespace std` 를 사용하면 더욱 좋다.
+
+성능이 cstdio에 비해 떨어지며, 이를 보완하기 위해 `ios_base::sync_with_stdio(false)`와 함께 사용하기도 한다.
+
+~~~ cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+~~~

@@ -1,6 +1,34 @@
 2558번 A+B - 2
 --------------
 
-> input과 output을 하는 방법을 물어보는 문제입니다.
->
-> iostream을 사용하거나 cstdio를 사용하여 풀 수 있습니다.
+1. iostream 사용
+
+~~~ cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+
+    int a, b;
+    cin >> a >> b;
+    cout << a + b <<>> endl;
+
+    return 0;
+}
+~~~
+
+2. cstdio 사용
+
+~~~ cpp
+#include <cstdio>
+
+int main() {
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+    printf("%d\n", a + b);
+
+    return 0;
+}
+~~~

@@ -1,14 +1,10 @@
-#include <iostream>
-
-using namespace std;
+#include <cstdio>
 
 int main(void)
 {
     int a, b;
-
-    cin >> a >> b;
-
-    cout << a + b << endl;
+    scanf("%d\n%d", &a, &b);
+    printf("%d\n", a + b);
 
     return 0;
 }

@@ -1,16 +1,14 @@
-#include <iostream>
+#include <cstdio>
 
-using namespace std;
-
-int main(void)
+int main(void) 
 {
     int cnt;
-    cin >> cnt;
+    scanf("%d", &cnt);
 
     for (int i = 1; i <= cnt; i++) {
         int a, b;
-        cin >> a >> b;
-        cout << "Case #" << i << ": " << a + b << endl;
+        scanf("%d %d", &a, &b);
+        printf("Case #%d: %d\n", a, b, a + b);
     }
 
     return 0;
