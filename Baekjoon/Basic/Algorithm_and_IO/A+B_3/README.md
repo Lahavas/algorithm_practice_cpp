@@ -13,10 +13,10 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    int cnt;
-    cin >> cnt;
+    int test_case;
+    cin >> test_case;
 
-    while ( cnt-- ) {
+    while ( test_case-- ) {
         int a, b;
         cin >> a >> b;
         cout << a + b << endl;
@@ -32,10 +32,10 @@ int main() {
 #include <cstdio>
 
 int main() {
-    int cnt;
-    scanf("%d", &cnt);
+    int test_case;
+    scanf("%d", &test_case);
 
-    while ( cnt-- ) {
+    while ( test_case-- ) {
         int a, b;
         scanf("%d %d", &a, &b);
         printf("%d\n", a + b);

@@ -1,10 +1,10 @@
 #include <cstdio>
 
 int main() {
-    int cnt;
-    scanf("%d", &cnt);
+    int test_case;
+    scanf("%d", &test_case);
 
-    for ( int i = 1; i <= cnt; i++ ) {
+    for ( int i = 1; i <= test_case; i++ ) {
         int a, b;
         scanf("%d %d", &a, &b);
         printf("Case #%d: %d + %d = %d\n", i, a, b, a + b);

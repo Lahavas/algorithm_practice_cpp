@@ -1,12 +1,12 @@
 #include <cstdio>
 
 int main() {
-    int cnt;
-    scanf("%d", &cnt);
+    int test_case;
+    scanf("%d", &test_case);
 
     int sum = 0;
 
-    while ( cnt-- ) {
+    while ( test_case-- ) {
         int num;
         scanf("%1d", &num);
         sum += num;

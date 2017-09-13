@@ -7,7 +7,7 @@ Baekjoon Online Judge 초급 Ch02. 자료구조 1
 #### 문제
 
 * [스택](./Stack) [[10828번 상세보기](https://www.acmicpc.net/problem/10828)]
-* 괄호 [[9012번 상세보기](https://www.acmicpc.net/problem/9012)]
+* [괄호](./Parenthesis) [[9012번 상세보기](https://www.acmicpc.net/problem/9012)]
 * 쇠막대기 [[10799번 상세보기](https://www.acmicpc.net/problem/10799)]
 * 에디터 [[1406번 상세보기](https://www.acmicpc.net/problem/1406)]
 * 큐 [[10845번 상세보기](https://www.acmicpc.net/problem/10845)]

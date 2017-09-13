@@ -7,12 +7,12 @@
 #include <cstdio>
 
 int main() {
-    int cnt;
-    scanf("%d", &cnt);
+    int test_case;
+    scanf("%d", &test_case);
 
     int sum = 0;
 
-    while ( cnt-- ) {
+    while ( test_case-- ) {
         int num;
         scanf("%1d", &num);
         sum += num;
@@ -35,15 +35,15 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    int cnt;
-    cin >> cnt;
+    int test_case;
+    cin >> test_case;
 
     string input;
     cin >> input;
 
     int sum = 0;
 
-    for ( int i = 0; i < cnt; i++ ) {
+    for ( int i = 0; i < test_case; i++ ) {
         int num = input.at(i) - '0';
         sum += num;
     }

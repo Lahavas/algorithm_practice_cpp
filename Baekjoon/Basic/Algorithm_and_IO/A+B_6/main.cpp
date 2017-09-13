@@ -1,10 +1,10 @@
 #include <cstdio>
 
 int main() {
-    int cnt;
-    scanf("%d", &cnt);
+    int test_case;
+    scanf("%d", &test_case);
 
-    while ( cnt-- ) {
+    while ( test_case-- ) {
         int a, b;
         scanf("%d,%d", &a, &b);
         printf("%d\n", a + b);
