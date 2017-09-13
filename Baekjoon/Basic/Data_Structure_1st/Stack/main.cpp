@@ -7,12 +7,12 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    int cnt;
-    cin >> cnt;
+    int test_case;
+    cin >> test_case;
 
     stack<int> stack;
 
-    while ( cnt-- ) {
+    while ( test_case-- ) {
         string cmd;
         cin >> cmd;
 
