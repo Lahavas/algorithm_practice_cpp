@@ -37,10 +37,14 @@ int main() {
 }
 ~~~
 
+scanf를 사용할 때 주의할 점은, 문자열이 아닌 문자 혹은 숫자를 입력받을 시에 입력 버퍼에 '\n'이 입력된다는 점입니다.
+위와 같은 경우에는 `getchar();` , `scanf("%*c", c);` 와 같이 강제로 '\n'를 입력받고 지워버리는 방법 혹은,  
+입력을 문자열로 받아 따로 처리하는 방법 등을 상황에 맞게 사용하여야 합니다.
+
 두 번째는 cin, cout과 같은 c++에서 제공하는 입출력 함수들을 사용하는 방법입니다.  
 iostream이라는 header 파일을 포함시켜주면 사용할 수 있다.  
 std namespace를 생략하기 위해 `using namespace std` 를 사용하면 더욱 좋습니다.  
-성능이 cstdio에 비해 떨어지며, 이를 보완하기 위해 `ios_base::sync_with_stdio(false)`와 함께 사용하기도 합니다.  
+성능이 cstdio에 비해 떨어지며, 이를 보완하기 위해 `ios_base::sync_with_stdio(false)` 와 함께 사용하기도 합니다.  
 
 ~~~ cpp
 #include <iostream>
