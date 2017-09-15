@@ -20,5 +20,7 @@ int main() {
         printf("%d ", index);
     }
 
+    printf("\n");
+
     return 0;
 }
