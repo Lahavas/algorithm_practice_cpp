@@ -11,7 +11,7 @@ Baekjoon Online Judge 초급 Ch02. 자료구조 1
 * [쇠막대기](./Metal_Rod) [[10799번 상세보기](https://www.acmicpc.net/problem/10799)]
 * [에디터](./Editor) [[1406번 상세보기](https://www.acmicpc.net/problem/1406)]
 * [큐](./Queue) [[10845번 상세보기](https://www.acmicpc.net/problem/10845)]
-* 조세퍼스 문제 [[1158번 상세보기](https://www.acmicpc.net/problem/1158)]
+* [조세퍼스 문제](./Josephus) [[1158번 상세보기](https://www.acmicpc.net/problem/1158)]
 * 덱 [[10866번 상세보기](https://www.acmicpc.net/problem/10866)]
 * 알파벳 개수 [[10808번 상세보기](https://www.acmicpc.net/problem/10808)]
 * 알파벳 찾기 [[10809번 상세보기](https://www.acmicpc.net/problem/10809)]
