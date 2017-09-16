@@ -17,6 +17,6 @@ Baekjoon Online Judge 초급 Ch02. 자료구조 1
 * [알파벳 찾기](./Search_for_Alphabet) [[10809번 상세보기](https://www.acmicpc.net/problem/10809)]
 * [문자열 분석](./String_Analysis) [[10820번 상세보기](https://www.acmicpc.net/problem/10820)]
 * [단어 길이 재기](./Word_Length) [[2743번 상세보기](https://www.acmicpc.net/problem/2743)]
-* ROT13 [[11655번 상세보기](https://www.acmicpc.net/problem/11655)]
+* [ROT13](./ROT13) [[11655번 상세보기](https://www.acmicpc.net/problem/11655)]
 * 네 수 [[10824번 상세보기](https://www.acmicpc.net/problem/10824)]
 * 접미사 배열 [[11656번 상세보기](https://www.acmicpc.net/problem/11656)]
