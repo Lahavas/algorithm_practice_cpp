@@ -11,14 +11,14 @@ scanf의 경우에는 공백으로 시작할 경우 공백을 무시하기 때�
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 101
+#define MAX 100
 
 int main() {
 
-    char input[MAX];
+    char s[MAX];
 
-    while ( fgets(input, sizeof(input), stdin) != NULL ) {
-        printf("%s", input);
+    while ( fgets(s, sizeof(s), stdin) != NULL ) {
+        printf("%s", s);
     }
 
     return 0;
@@ -36,10 +36,10 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    string input;
+    string s;
 
-    while ( getline(cin, input) ) {
-        cout << input << endl;
+    while ( getline(cin, s) ) {
+        cout << s << endl;
     }
 
     return 0;

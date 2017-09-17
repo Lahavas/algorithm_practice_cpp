@@ -6,13 +6,13 @@
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 101
+#define MAX 100
 
 int main() {
-    char input[MAX];
+    char s[MAX];
     
-    while ( scanf("%10s", input) == true) {
-        printf("%s\n", input);
+    while ( scanf("%10s", s) == 1 ) {
+        printf("%s\n", s);
     }
 
     return 0;
@@ -30,14 +30,14 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    string input;
-    cin >> input;
+    string s;
+    cin >> s;
 
     int cnt = 10;
 
-    for ( int i = 0; i < input.size(); i++) {
+    for ( int i = 0; i < s.size(); i++ ) {
         cnt--;
-        cout << input.at(i);
+        cout << s.at(i);
 
         if ( cnt == 0 ) {
             cnt = 10;

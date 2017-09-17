@@ -1,12 +1,12 @@
 #include <cstdio>
 
-#define MAX 101
+#define MAX 100
 
 int main() {
-    char input[MAX];
+    char s[MAX];
 
-    while ( scanf("%[^\n]\n", input) != EOF ) {
-        printf("%s\n", input);
+    while ( scanf("%[^\n]\n", s) == 1 ) {
+        printf("%s\n", s);
     }
 
     return 0;

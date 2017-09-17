@@ -10,10 +10,10 @@ format string으로 입력받는 것이 더 편리하므로 cstdio를 사용하�
 #include <cstdio>
 
 int main() {
-    int test_case;
-    scanf("%d", &test_case);
+    int tc;
+    scanf("%d", &tc);
 
-    for ( int i = 1; i <= test_case; i++ ) {
+    for ( int i = 1; i <= tc; i++ ) {
         int a, b;
         scanf("%d %d", &a, &b);
         printf("Case #%d: %d + %d = %d\n", i, a, b, a + b);

@@ -1,13 +1,13 @@
 #include <cstdio>
 
-#define MAX 101
+#define MAX 100
 
 int main() {
 
-    char input[MAX];
+    char s[MAX];
 
-    while ( fgets(input, sizeof(input), stdin) != NULL ) {
-        printf("%s", input);
+    while ( fgets(s, sizeof(s), stdin) != NULL ) {
+        printf("%s", s);
     }
 
     return 0;
