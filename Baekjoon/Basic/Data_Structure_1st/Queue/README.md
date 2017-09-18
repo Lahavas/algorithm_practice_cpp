@@ -20,7 +20,7 @@ int main() {
     int tc;
     cin >> tc;
 
-    queue<int> q;
+    queue<int> qu;
 
     while ( tc-- ) {
         string cmd;
@@ -29,20 +29,20 @@ int main() {
         if ( cmd == "push" ) {
             int num;
             cin >> num;
-            q.push(num);
+            qu.push(num);
         } else if ( cmd == "pop" ) {
-            cout << (q.empty() ? -1 : q.front()) << endl;
-            if ( !q.empty() ) {
-                q.pop();
+            cout << (qu.empty() ? -1 : qu.front()) << endl;
+            if ( !qu.empty() ) {
+                qu.pop();
             }
         } else if ( cmd == "size" ) {
-            cout << q.size() << endl;
+            cout << qu.size() << endl;
         } else if ( cmd == "empty" ) {
-            cout << (q.empty() ? 1 : 0) << endl;
+            cout << (qu.empty() ? 1 : 0) << endl;
         } else if ( cmd == "front" ) {
-            cout << (q.empty() ? -1 : q.front()) << endl;
+            cout << (qu.empty() ? -1 : qu.front()) << endl;
         } else if ( cmd == "back" ) {
-            cout << (q.empty() ? -1 : q.back()) << endl;
+            cout << (qu.empty() ? -1 : qu.back()) << endl;
         }
     }
 
@@ -104,7 +104,7 @@ int main() {
     int tc;
     cin >> tc;
 
-    Queue q;
+    Queue qu;
 
     while ( tc-- ) {
         string cmd;
@@ -113,20 +113,20 @@ int main() {
         if ( cmd == "push" ) {
             int num;
             cin >> num;
-            q.push(num);
+            qu.push(num);
         } else if ( cmd == "pop" ) {
-            cout << (q.empty() ? -1 : q.front()) << endl;
-            if ( !q.empty() ) {
-                q.pop();
+            cout << (qu.empty() ? -1 : qu.front()) << endl;
+            if ( !qu.empty() ) {
+                qu.pop();
             }
         } else if ( cmd == "size" ) {
-            cout << q.size() << endl;
+            cout << qu.size() << endl;
         } else if ( cmd == "empty" ) {
-            cout << (q.empty() ? 1 : 0) << endl;
+            cout << (qu.empty() ? 1 : 0) << endl;
         } else if ( cmd == "front" ) {
-            cout << (q.empty() ? -1 : q.front()) << endl;
+            cout << (qu.empty() ? -1 : qu.front()) << endl;
         } else if ( cmd == "back" ) {
-            cout << (q.empty() ? -1 : q.back()) << endl;
+            cout << (qu.empty() ? -1 : qu.back()) << endl;
         }
     }
 

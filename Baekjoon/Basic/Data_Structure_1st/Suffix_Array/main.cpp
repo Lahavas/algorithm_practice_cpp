@@ -9,23 +9,23 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    string input;
-    cin >> input;
+    string s;
+    cin >> s;
 
-    vector<int> vector;
+    vector<int> vt;
 
-    int size = input.size();
+    int size = s.size();
 
     for ( int i = 0; i < size; i++ ) {
-        vector.push_back(i);
+        vt.push_back(i);
     }
 
-    sort(vector.begin(), vector.end(), [&input] (int u, int v) {
-        return strcmp(input.c_str() + u, input.c_str() + v) < 0;
+    sort(vt.begin(), vt.end(), [&s] (int u, int v) {
+        return strcmp(s.c_str() + u, s.c_str() + v) < 0;
     });
 
-    for ( auto &x : vector ) {
-        cout << input.substr(x) << endl;
+    for ( auto &x : vt ) {
+        cout << s.substr(x) << endl;
     }
 
     return 0;
