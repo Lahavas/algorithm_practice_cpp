@@ -7,30 +7,30 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    int test_case;
-    cin >> test_case;
+    int tc;
+    cin >> tc;
 
-    stack<int> stack;
+    stack<int> st;
 
-    while ( test_case-- ) {
+    while ( tc-- ) {
         string cmd;
         cin >> cmd;
 
         if ( cmd == "push" ) {
             int num;
             cin >> num;
-            stack.push(num);
+            st.push(num);
         } else if ( cmd == "pop" ) {
-            cout << (stack.empty() ? -1 : stack.top()) << endl;
-            if ( !stack.empty() ) {
-                stack.pop();
+            cout << (st.empty() ? -1 : st.top()) << endl;
+            if ( !st.empty() ) {
+                st.pop();
             }
         } else if ( cmd == "size" ) {
-            cout << stack.size() << endl;
+            cout << st.size() << endl;
         } else if ( cmd == "empty" ) {
-            cout << (stack.empty() ? 1 : 0) << endl;
+            cout << (st.empty() ? 1 : 0) << endl;
         } else if ( cmd == "top" ) {
-            cout << (stack.empty() ? -1 : stack.top()) << endl;
+            cout << (st.empty() ? -1 : st.top()) << endl;
         }
     }
 
