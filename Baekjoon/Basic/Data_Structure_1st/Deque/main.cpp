@@ -7,41 +7,41 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    int test_case;
-    cin >> test_case;
+    int tc;
+    cin >> tc;
 
-    deque<int> deque;
+    deque<int> dq;
 
-    while ( test_case-- ) {
+    while ( tc-- ) {
         string cmd;
         cin >> cmd;
 
         if ( cmd == "push_front" ) {
             int num;
             cin >> num;
-            deque.push_front(num);
+            dq.push_front(num);
         } else if ( cmd == "push_back" ) {
             int num;
             cin >> num;
-            deque.push_back(num);
+            dq.push_back(num);
         } else if ( cmd == "pop_front" ) {
-            cout << (deque.empty() ? -1 : deque.front()) << endl;
-            if ( !deque.empty() ) {
-                deque.pop_front();
+            cout << (dq.empty() ? -1 : dq.front()) << endl;
+            if ( !dq.empty() ) {
+                dq.pop_front();
             }
         } else if ( cmd == "pop_back" ) {
-            cout << (deque.empty() ? -1 : deque.back()) << endl;
-            if ( !deque.empty() ) {
-                deque.pop_back();
+            cout << (dq.empty() ? -1 : dq.back()) << endl;
+            if ( !dq.empty() ) {
+                dq.pop_back();
             }
         } else if ( cmd == "size" ) {
-            cout << deque.size() << endl;
+            cout << dq.size() << endl;
         } else if ( cmd == "empty" ) {
-            cout << (deque.empty() ? 1 : 0) << endl;
+            cout << (dq.empty() ? 1 : 0) << endl;
         } else if ( cmd == "front" ) {
-            cout << (deque.empty() ? -1 : deque.front()) << endl;
+            cout << (dq.empty() ? -1 : dq.front()) << endl;
         } else if ( cmd == "back" ) {
-            cout << (deque.empty() ? -1 : deque.back()) << endl;
+            cout << (dq.empty() ? -1 : dq.back()) << endl;
         }
     }
 

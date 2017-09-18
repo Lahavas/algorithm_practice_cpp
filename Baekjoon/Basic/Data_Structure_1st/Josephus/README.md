@@ -13,26 +13,26 @@ int main() {
     int m, n;
     scanf("%d %d", &m, &n);
 
-    std::queue<int> queue;
+    std::queue<int> q;
 
     for ( int i = 1; i <= m; i++ ) {
-        queue.push(i);
+        q.push(i);
     }
 
     printf("<");
 
-    while ( !queue.empty() ) {
+    while ( !q.empty() ) {
         for ( int i = 1; i <= n; i++ ) {
             if ( i == n ) {
-                printf("%d", queue.front());
-                queue.pop();
+                printf("%d", q.front());
+                q.pop();
             } else {
-                queue.push(queue.front());
-                queue.pop();
+                q.push(q.front());
+                q.pop();
             }
         }
 
-        if ( queue.size() != 0 ) {
+        if ( q.size() != 0 ) {
             printf(", ");
         }
     }
