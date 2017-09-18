@@ -2,19 +2,19 @@
 
 #define MAX 100001
 
-int countRod(char* input) {
+int countRod(char* s) {
     int rod = 0;
     int result = 0;
 
     for ( int i = 0; i < MAX; i++ ) {
-        if ( input[i] == '(' ) {
-            if ( input[i + 1] == ')' ) {
+        if ( s[i] == '(' ) {
+            if ( s[i + 1] == ')' ) {
                 result += rod;
                 i++;
             } else {
                 rod++;
             }
-        } else if ( input[i] == ')' ) {
+        } else if ( s[i] == ')' ) {
             result++;
             rod--;
         } else {
@@ -26,10 +26,10 @@ int countRod(char* input) {
 }
 
 int main() {
-    char input[MAX];
-    scanf("%s", input);
+    char s[MAX];
+    scanf("%s", s);
 
-    printf("%d\n", countRod(input));
+    printf("%d\n", countRod(s));
 
     return 0;
 }

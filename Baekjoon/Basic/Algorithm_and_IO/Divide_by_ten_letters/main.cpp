@@ -1,6 +1,6 @@
 #include <cstdio>
 
-#define MAX 100
+#define MAX 110
 
 int main() {
     char s[MAX];
