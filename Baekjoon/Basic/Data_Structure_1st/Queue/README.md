@@ -13,32 +13,32 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
 
-    int test_case;
-    cin >> test_case;
+    int tc;
+    cin >> tc;
 
-    queue<int> queue;
+    queue<int> q;
 
-    while ( test_case-- ) {
+    while ( tc-- ) {
         string cmd;
         cin >> cmd;
 
         if ( cmd == "push" ) {
             int num;
             cin >> num;
-            queue.push(num);
+            q.push(num);
         } else if ( cmd == "pop" ) {
-            cout << (queue.empty() ? -1 : queue.front()) << endl;
-            if ( !queue.empty() ) {
-                queue.pop();
+            cout << (q.empty() ? -1 : q.front()) << endl;
+            if ( !q.empty() ) {
+                q.pop();
             }
         } else if ( cmd == "size" ) {
-            cout << queue.size() << endl;
+            cout << q.size() << endl;
         } else if ( cmd == "empty" ) {
-            cout << (queue.empty() ? 1 : 0) << endl;
+            cout << (q.empty() ? 1 : 0) << endl;
         } else if ( cmd == "front" ) {
-            cout << (queue.empty() ? -1 : queue.front()) << endl;
+            cout << (q.empty() ? -1 : q.front()) << endl;
         } else if ( cmd == "back" ) {
-            cout << (queue.empty() ? -1 : queue.back()) << endl;
+            cout << (q.empty() ? -1 : q.back()) << endl;
         }
     }
 
