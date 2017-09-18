@@ -4,6 +4,7 @@
         "iosfwd": "cpp",
         "iterator": "cpp",
         "vector": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "__locale": "cpp"
     }
 }
