@@ -6,6 +6,8 @@ VPS가 성립하기 위해서는 문자열 내의 '(' 와 ')' 가 전부 대응�
 주의할 점은, ')' 다음에 '(' 가 오면 안된다는 점입니다. 즉 순서 또한 고려해서 풀어야합니다.  
 Stack을 이용해서 풀 게 되면, '('일 경우 Push를, ')'일 경우 Pop을 해주고, Stack이 비어있을 때 Pop이 오면 No를 출력하도록 설계하면 됩니다.  
 
+1. cstdio 사용
+
 ~~~ cpp
 #include <cstdio>
 
@@ -39,6 +41,56 @@ int main() {
 
     while ( tc-- ) {
         scanf("%s", ps);
+
+        if ( isValid(ps) == true ) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
+~~~
+
+2. iostream 사용
+
+~~~ cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+bool isValid(string ps) {
+    int cnt = 0;
+
+    for ( int i = 0; i < ps.size(); i++ ) {
+        if ( ps[i] == '(' ) {
+            cnt++;
+        } else if ( ps[i] == ')' ) {
+            cnt--;
+        } else {
+            break;
+        }
+
+        if ( cnt < 0 ) {
+            return false;
+        }
+    }
+
+    return (cnt == 0 ? true : false);
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+
+    int tc;
+    cin >> tc;
+
+    string ps;
+
+    while ( tc-- ) {
+        cin >> ps;
 
         if ( isValid(ps) == true ) {
             printf("YES\n");
