@@ -3,18 +3,18 @@
 #define MAX 102
 
 int main() {
-    char input[MAX];
-    scanf("%s", input);
+    char s[MAX];
+    scanf("%s", s);
 
-    int length = 0;
+    int len = 0;
     for ( int i = 0; i < MAX; i++ ) {
-        if ( input[i] == '\0' ) {
+        if ( s[i] == '\0' ) {
             break;
         }
-        length++;
+        len++;
     }
     
-    printf("%d\n", length);
+    printf("%d\n", len);
 
     return 0;
 }
