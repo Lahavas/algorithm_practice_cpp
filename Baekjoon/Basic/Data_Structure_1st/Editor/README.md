@@ -11,26 +11,26 @@
 
 #define MAX 600001
 
-std::stack<char> left_stack;
-std::stack<char> right_stack;
+std::stack<char> lst;
+std::stack<char> rst;
 
 void updateEditor(char cmd) {
     switch ( cmd ) {
         case 'L':
-            if ( !left_stack.empty() ) {
-                right_stack.push(left_stack.top());
-                left_stack.pop();
+            if ( !lst.empty() ) {
+                rst.push(lst.top());
+                lst.pop();
             }
             break;
         case 'D':
-            if ( !right_stack.empty() ) {
-                left_stack.push(right_stack.top());
-                right_stack.pop();
+            if ( !rst.empty() ) {
+                lst.push(rst.top());
+                rst.pop();
             }
             break;
         case 'B':
-            if ( !left_stack.empty() ) {
-                left_stack.pop();
+            if ( !lst.empty() ) {
+                lst.pop();
             }
             break;
         case 'P':
@@ -38,7 +38,7 @@ void updateEditor(char cmd) {
             scanf("%c", &input);
             getchar();
 
-            left_stack.push(input);
+            lst.push(input);
             break;
         default:
             break;
@@ -48,14 +48,14 @@ void updateEditor(char cmd) {
 }
 
 void printEditor() {
-    while ( !left_stack.empty() ) {
-        right_stack.push(left_stack.top());
-        left_stack.pop();
+    while ( !lst.empty() ) {
+        rst.push(lst.top());
+        lst.pop();
     }
 
-    while ( !right_stack.empty() ) {
-        printf("%c", right_stack.top());
-        right_stack.pop();
+    while ( !rst.empty() ) {
+        printf("%c", rst.top());
+        rst.pop();
     }
 
     puts("");
@@ -64,22 +64,22 @@ void printEditor() {
 }
 
 int main() {
-    char init_string[MAX];
-    scanf("%s", init_string);
+    char s[MAX];
+    scanf("%s", s);
 
-    int test_case;
-    scanf("%d", &test_case);
+    int tc;
+    scanf("%d", &tc);
     getchar();
 
     for ( int i = 0; i < MAX; i++ ) {
-        if ( init_string[i] ) {
-            left_stack.push(init_string[i]);
+        if ( s[i] ) {
+            lst.push(s[i]);
         } else {
             break;
         }
     }
 
-    while ( test_case-- ) {
+    while ( tc-- ) {
         char cmd;
         scanf("%c", &cmd);
         getchar();
