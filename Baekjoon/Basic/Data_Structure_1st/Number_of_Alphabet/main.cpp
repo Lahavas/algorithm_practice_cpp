@@ -1,17 +1,19 @@
 #include <cstdio>
 #include <cstring>
 
-#define MAX 100
+#define MAX 102
 
 int main() {
-    char input[MAX];
-    scanf("%s", input);
+    char s[MAX];
+    scanf("%s", s);
 
     for ( int i = 'a'; i <= 'z'; i++) {
         int cnt = 0;
 
-        for ( int j = 0; j < strlen(input); j++ ) {
-            if ( i == input[j] ) {
+        int len = strlen(s);
+
+        for ( int j = 0; j < len; j++ ) {
+            if ( i == s[j] ) {
                 cnt++;
             }
         }
