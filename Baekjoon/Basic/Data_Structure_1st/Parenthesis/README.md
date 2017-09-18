@@ -32,12 +32,12 @@ bool isValid(char* ps) {
 }
 
 int main() {
-    int test_case;
-    scanf("%d", &test_case);
+    int tc;
+    scanf("%d", &tc);
 
     char ps[MAX];
 
-    while ( test_case-- ) {
+    while ( tc-- ) {
         scanf("%s", ps);
 
         if ( isValid(ps) == true ) {
