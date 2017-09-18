@@ -10,7 +10,7 @@ algorithm header의 find 함수를 사용하여 더욱 편리하게 해당 문�
 #include <cstdio>
 #include <cstring>
 
-#define MAX 102
+#define MAX 101
 
 int main() {
     char s[MAX];

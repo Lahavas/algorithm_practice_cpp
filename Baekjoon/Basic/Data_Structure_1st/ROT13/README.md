@@ -7,7 +7,7 @@
 #include <cstdio>
 #include <cstring>
 
-#define MAX 102
+#define MAX 101
 
 char ROT13(char c) {
     if ( c >= 'a' && c <= 'm' ) {

@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstring>
 
-#define MAX 102
+#define MAX 101
 
 int main() {
     char s[MAX];

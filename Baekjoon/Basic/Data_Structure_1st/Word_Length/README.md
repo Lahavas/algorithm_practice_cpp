@@ -11,7 +11,7 @@ string에서 length와 size 함수는 string의 byte를 세는 함수로, 같은
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 102
+#define MAX 100
 
 int main() {
     char s[MAX];
@@ -37,7 +37,7 @@ int main() {
 #include <cstdio>
 #include <cstring>
 
-#define MAX 102
+#define MAX 101
 
 int main() {
     char s[MAX];
