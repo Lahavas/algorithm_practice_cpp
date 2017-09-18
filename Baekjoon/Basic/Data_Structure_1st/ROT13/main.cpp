@@ -18,14 +18,16 @@ char ROT13(char c) {
 }
 
 int main() {
-    char input[MAX];
-    fgets(input, sizeof(input), stdin);
+    char s[MAX];
+    fgets(s, sizeof(s), stdin);
 
-    for ( int i = 0; i < strlen(input); i++ ) {
-        input[i] = ROT13(input[i]);
+    int len = strlen(s);
+
+    for ( int i = 0; i < len; i++ ) {
+        s[i] = ROT13(s[i]);
     }
 
-    printf("%s\n", input);
+    printf("%s\n", s);
 
     return 0;
 }
