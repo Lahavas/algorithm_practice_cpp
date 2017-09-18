@@ -1,6 +1,6 @@
 #include <cstdio>
 
-#define MAX 51
+#define MAX 50
 
 bool isValid(char* ps) {
     int cnt = 0;

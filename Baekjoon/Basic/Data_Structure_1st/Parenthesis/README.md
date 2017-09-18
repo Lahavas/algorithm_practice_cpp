@@ -11,7 +11,7 @@ Stack을 이용해서 풀 게 되면, '('일 경우 Push를, ')'일 경우 Pop�
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 51
+#define MAX 50
 
 bool isValid(char* ps) {
     int cnt = 0;
