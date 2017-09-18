@@ -56,10 +56,12 @@ int main() {
 #include <iostream>
 #include <string>
 
+#define MAX 10000
+
 using namespace std;
 
 struct Queue {
-    int data[10000];
+    int data[MAX];
     int begin, end;
 
     Queue() {

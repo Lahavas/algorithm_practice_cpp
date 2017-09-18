@@ -10,7 +10,7 @@ Stack을 이용할 경우에 입력하는 괄호의 배열이 ')'가 먼저 오�
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 100001
+#define MAX 100000
 
 int countRod(char* s) {
     int rod = 0;

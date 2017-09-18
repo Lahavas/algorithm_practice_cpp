@@ -9,7 +9,7 @@
 #include <cstdio>
 #include <stack>
 
-#define MAX 600001
+#define MAX 600000
 
 std::stack<char> lst;
 std::stack<char> rst;
