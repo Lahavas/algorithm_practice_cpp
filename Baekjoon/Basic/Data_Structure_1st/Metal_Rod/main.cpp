@@ -1,6 +1,6 @@
 #include <cstdio>
 
-#define MAX 100001
+#define MAX 100000
 
 int countRod(char* s) {
     int rod = 0;

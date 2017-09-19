@@ -5,26 +5,26 @@ int main() {
     int m, n;
     scanf("%d %d", &m, &n);
 
-    std::queue<int> q;
+    std::queue<int> qu;
 
     for ( int i = 1; i <= m; i++ ) {
-        q.push(i);
+        qu.push(i);
     }
 
     printf("<");
 
-    while ( !q.empty() ) {
+    while ( !qu.empty() ) {
         for ( int i = 1; i <= n; i++ ) {
             if ( i == n ) {
-                printf("%d", q.front());
-                q.pop();
+                printf("%d", qu.front());
+                qu.pop();
             } else {
-                q.push(q.front());
-                q.pop();
+                qu.push(qu.front());
+                qu.pop();
             }
         }
 
-        if ( q.size() != 0 ) {
+        if ( qu.size() != 0 ) {
             printf(", ");
         }
     }
