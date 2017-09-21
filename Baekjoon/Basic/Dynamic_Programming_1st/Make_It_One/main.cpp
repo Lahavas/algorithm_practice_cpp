@@ -3,11 +3,11 @@
 
 #define MAX 1000001
 
-int arr[MAX];
-
 int main() {
     int n;
     scanf("%d", &n);
+
+    int arr[MAX];
 
     for ( int i = 1; i <= n; i++ ) {
         if ( i == 1 ) {
