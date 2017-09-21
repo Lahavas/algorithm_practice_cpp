@@ -6,7 +6,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 
 #### 문제
 
-* 1로 만들기 [[1463번 상세보기](https://www.acmicpc.net/problem/1463)]
+* [1로 만들기](./Make_It_One) [[1463번 상세보기](https://www.acmicpc.net/problem/1463)]
 * 2xn 타일링 [[11726번 상세보기](https://www.acmicpc.net/problem/11726)]
 * 2xn 타일링 2 [[11727번 상세보기](https://www.acmicpc.net/problem/11727)]
 * 1,2,3 더하기 [[9095번 상세보기](https://www.acmicpc.net/problem/9095)]
