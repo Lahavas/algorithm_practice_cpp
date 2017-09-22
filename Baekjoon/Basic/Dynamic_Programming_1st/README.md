@@ -27,3 +27,63 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 * 파도반 수열 [[9461번 상세보기](https://www.acmicpc.net/problem/9461)]
 * 합분해 [[2225번 상세보기](https://www.acmicpc.net/problem/2225)]
 * 암호코드 [[2011번 상세보기](https://www.acmicpc.net/problem/2011)]
+
+### 풀이 전 알아야 할 개념
+
+#### 다이나믹 프로그래밍
+
+다이나믹 프로그래밍은 큰 문제를 작은 문제로 나눠서 푸는 알고리즘입니다.  
+다음 두 가지 속성을 만족합니다.  
+
+1. Overlapping Subproblem
+    * 큰 문제와 작은 문제는 같은 방식으로 풀 수 있습니다.
+    * 큰 문제는 작은 문제로 쪼갤 수 있습니다.
+2. Optimal Substructure
+    * 큰 문제의 정답을 작은 문제의 정답에서 구할 수 있습니다.
+
+작은 문제를 기록하기 위해 배열을 구현하는 Memorization을 통해 다이나믹 프로그래밍을 구현할 수 있습니다.  
+
+#### Top-down VS Bottom-up
+
+* Top-down
+
+Top-down은 재귀 함수를 이용하여 다이나믹 프로그래밍을 푸는 방식입니다.  
+시간복잡도는 (재귀함수 하나의 시간 복잡도) X (반복 횟수) 를 통해 구할 수 있습니다.  
+
+1. 큰 문제를 작은 문제로 나눈다
+2. 작은 문제를 푼다
+3. 큰 문제를 푼다
+
+~~~ cpp
+int dp[100];
+int fibonacci(int n) {
+    if ( n <= 1 ) {
+        return n;
+    } else {
+        if ( dp[n] > 0 ) {
+            return dp[n];
+        }
+        dp[n] = fibonacci(n - 1) + fibonacci(n - 2);
+        return dp[n];
+    }
+}
+~~~
+
+* Bottom-up
+
+Bottom-up은 반복문를 이용하여 다이나믹 프로그래밍을 푸는 방식입니다.  
+작은 문제부터 원하는 값을 구할 때까지 차례대로 풀이합니다.  
+
+~~~ cpp
+int dp[100];
+int fibonacci(int n) {
+    dp[0] = 0;
+    dp[1] = 1;
+
+    for ( int i = 2; i <= n; i++ ) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+
+    return dp[n];
+}
+~~~
