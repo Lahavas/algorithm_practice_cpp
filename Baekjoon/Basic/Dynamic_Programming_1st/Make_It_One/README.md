@@ -1,18 +1,16 @@
 1463번 1로 만들기
 --------------
 
+1. Bottom-up 방식으로 풀이  
+
 ~~~ cpp
 #include <cstdio>
-#include <climits>
 
 #define MAX 1000001
 
-int main() {
-    int n;
-    scanf("%d", &n);
+int arr[MAX];
 
-    int arr[MAX];
-
+int makeOne(int n) {
     for ( int i = 1; i <= n; i++ ) {
         if ( i == 1 ) {
             arr[i] = 0;
@@ -30,7 +28,14 @@ int main() {
         }
     }
 
-    int result = arr[n];
+    return arr[n];
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int result = makeOne(n);
 
     printf("%d\n", result);
 
