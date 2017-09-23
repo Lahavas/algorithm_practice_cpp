@@ -2,7 +2,7 @@
 
 #define MAX 1000001
 
-int arr[MAX];
+int arr[MAX] = { 0 };
 
 int makeOne(int n) {
     for ( int i = 1; i <= n; i++ ) {
