@@ -7,7 +7,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 #### 문제
 
 * [1로 만들기](./Make_It_One) [[1463번 상세보기](https://www.acmicpc.net/problem/1463)]
-* 2xn 타일링 [[11726번 상세보기](https://www.acmicpc.net/problem/11726)]
+* [2xn 타일링](./Two_times_N_1) [[11726번 상세보기](https://www.acmicpc.net/problem/11726)]
 * 2xn 타일링 2 [[11727번 상세보기](https://www.acmicpc.net/problem/11727)]
 * 1,2,3 더하기 [[9095번 상세보기](https://www.acmicpc.net/problem/9095)]
 * 붕어빵 판매하기 [[11052번 상세보기](https://www.acmicpc.net/problem/11052)]
@@ -47,12 +47,12 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 
 * Top-down
 
-Top-down은 재귀 함수를 이용하여 다이나믹 프로그래밍을 푸는 방식입니다.  
-시간복잡도는 (재귀함수 하나의 시간 복잡도) X (반복 횟수) 를 통해 구할 수 있습니다.  
+    Top-down은 재귀 함수를 이용하여 다이나믹 프로그래밍을 푸는 방식입니다.  
+    시간복잡도는 (재귀함수 하나의 시간 복잡도) X (반복 횟수) 를 통해 구할 수 있습니다.  
 
-1. 큰 문제를 작은 문제로 나눕니다
-2. 작은 문제를 풉니다
-3. 큰 문제를 풉니다
+    1. 큰 문제를 작은 문제로 나눕니다
+    2. 작은 문제를 풉니다
+    3. 큰 문제를 풉니다
 
 ~~~ cpp
 int dp[100];
@@ -71,8 +71,8 @@ int fibonacci(int n) {
 
 * Bottom-up
 
-Bottom-up은 반복문를 이용하여 다이나믹 프로그래밍을 푸는 방식입니다.  
-작은 문제부터 원하는 값을 구할 때까지 차례대로 풀이합니다.  
+    Bottom-up은 반복문를 이용하여 다이나믹 프로그래밍을 푸는 방식입니다.  
+    작은 문제부터 원하는 값을 구할 때까지 차례대로 풀이합니다.  
 
 ~~~ cpp
 int dp[100];
