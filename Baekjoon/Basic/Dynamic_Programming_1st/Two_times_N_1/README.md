@@ -13,14 +13,21 @@ int arr[MAX] = { 0 };
 
 int twoTimesN(int n) {
     if ( n == 1 ) {
-        arr[n] = 1;
+        return 1;
     } else if ( n == 2 ) {
-        arr[n] = 2;
+        return 2;
     } else {
+        if ( arr[n] > 0 ) {
+            return arr[n];
+        }
+        
         arr[n] = twoTimesN(n - 1) + twoTimesN(n - 2);
+        if ( arr[n] > DIVIDE ) {
+            arr[n] %= DIVIDE;
+        }
+        
+        return arr[n];
     }
-
-    return arr[n];
 }
 
 int main() {
@@ -50,7 +57,7 @@ int twoTimesN(int n) {
 
         if ( i == 1 ) {
             arr[i] = 1;
-        } else if ( i == 2) {
+        } else if ( i == 2 ) {
             arr[i] = 2;
         } else {
             arr[i] = arr[i - 1] + arr[i - 2];

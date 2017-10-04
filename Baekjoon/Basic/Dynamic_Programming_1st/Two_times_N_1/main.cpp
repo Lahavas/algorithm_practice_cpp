@@ -6,12 +6,20 @@
 int arr[MAX] = { 0 };
 
 int twoTimesN(int n) {
-    if ( n == 1 ) {
-        arr[n] = 1;
-    } else if ( n == 2 ) {
-        arr[n] = 2;
-    } else {
-        arr[n] = twoTimesN(n - 1) + twoTimesN(n - 2);
+
+    for ( int i = 1; i <= n; i++ ) {
+
+        if ( i == 1 ) {
+            arr[i] = 1;
+        } else if ( i == 2 ) {
+            arr[i] = 2;
+        } else {
+            arr[i] = arr[i - 1] + arr[i - 2];
+        }
+
+        if ( arr[i] > DIVIDE ) {
+            arr[i] %= DIVIDE;
+        }
     }
 
     return arr[n];
