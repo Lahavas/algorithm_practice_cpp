@@ -10,7 +10,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 * [2xn 타일링](./Two_times_N_1) [[11726번 상세보기](https://www.acmicpc.net/problem/11726)]
 * [2xn 타일링 2](./Two_times_N_2) [[11727번 상세보기](https://www.acmicpc.net/problem/11727)]
 * [1,2,3 더하기](./Add_One_Two_Three) [[9095번 상세보기](https://www.acmicpc.net/problem/9095)]
-* 붕어빵 판매하기 [[11052번 상세보기](https://www.acmicpc.net/problem/11052)]
+* [붕어빵 판매하기](./Selling_Bread) [[11052번 상세보기](https://www.acmicpc.net/problem/11052)]
 * 쉬운 계단 수 [[10844번 상세보기](https://www.acmicpc.net/problem/10844)]
 * 오르막 수 [[11057번 상세보기](https://www.acmicpc.net/problem/11057)]
 * 이친수 [[2193번 상세보기](https://www.acmicpc.net/problem/2193)]
