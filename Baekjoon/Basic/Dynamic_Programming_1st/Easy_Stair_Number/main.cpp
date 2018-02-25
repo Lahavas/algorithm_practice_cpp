@@ -17,12 +17,14 @@ int main()
     for ( int i = 2; i <= n; ++i ) {
         for ( int j = 0; j <= 9; ++j ) {
             if ( j == 0 ) {
-                d[i][j] = (d[i - 1][1] % DIVIDE);
+                d[i][j] = d[i - 1][1];
             } else if ( j == 9 ) {
-                d[i][j] = (d[i - 1][8] % DIVIDE);
+                d[i][j] = d[i - 1][8];
             } else {
-                d[i][j] = ((d[i - 1][j - 1] + d[i - 1][j + 1]) % DIVIDE);
+                d[i][j] = d[i - 1][j - 1] + d[i - 1][j + 1];
             }
+
+            d[i][j] %= DIVIDE;
         }
     }
     
