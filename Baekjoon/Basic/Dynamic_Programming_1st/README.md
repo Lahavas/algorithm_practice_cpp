@@ -15,7 +15,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 * [오르막 수](./Ascending_Number) [[11057번 상세보기](https://www.acmicpc.net/problem/11057)]
 * [이친수](./Pinary_Number) [[2193번 상세보기](https://www.acmicpc.net/problem/2193)]
 * [스티커](./Sticker) [[9465번 상세보기](https://www.acmicpc.net/problem/9465)]
-* 포도주 시식 [[2156번 상세보기](https://www.acmicpc.net/problem/2156)]
+* [포도주 시식](./Wine_Tasting) [[2156번 상세보기](https://www.acmicpc.net/problem/2156)]
 * 가장 긴 증가하는 부분 수열 [[11053번 상세보기](https://www.acmicpc.net/problem/11053)]
 * 가장 큰 증가 부분 수열 [[11055번 상세보기](https://www.acmicpc.net/problem/11055)]
 * 가장 긴 감소하는 부분 수열 [[11722번 상세보기](https://www.acmicpc.net/problem/11722)]
