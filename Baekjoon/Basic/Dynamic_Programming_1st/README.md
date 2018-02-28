@@ -19,7 +19,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 * [가장 긴 증가하는 부분 수열](./The_Longest_Increasing_Subsequence) [[11053번 상세보기](https://www.acmicpc.net/problem/11053)]
 * [가장 큰 증가 부분 수열](./The_Largest_Increasing_Subsequence) [[11055번 상세보기](https://www.acmicpc.net/problem/11055)]
 * [가장 긴 감소하는 부분 수열](./The_Longest_Decreasing_Subsequence) [[11722번 상세보기](https://www.acmicpc.net/problem/11722)]
-* 가장 긴 바이토닉 부분 수열 [[11054번 상세보기](https://www.acmicpc.net/problem/11054)]
+* [가장 긴 바이토닉 부분 수열](./The_Longest_Bitonic_Subsequence) [[11054번 상세보기](https://www.acmicpc.net/problem/11054)]
 * 연속합 [[1912번 상세보기](https://www.acmicpc.net/problem/1912)]
 * 계단 오르기 [[2579번 상세보기](https://www.acmicpc.net/problem/2579)]
 * 제곱수의 합 [[1699번 상세보기](https://www.acmicpc.net/problem/1699)]
