@@ -24,7 +24,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 * [계단 오르기](./Go_Up_The_Stairs) [[2579번 상세보기](https://www.acmicpc.net/problem/2579)]
 * [제곱수의 합](./Sum_Of_Squares) [[1699번 상세보기](https://www.acmicpc.net/problem/1699)]
 * [타일 채우기](./Fill_Tile) [[2133번 상세보기](https://www.acmicpc.net/problem/2133)]
-* 파도반 수열 [[9461번 상세보기](https://www.acmicpc.net/problem/9461)]
+* [파도반 수열](./Padovan_Sequence) [[9461번 상세보기](https://www.acmicpc.net/problem/9461)]
 * 합분해 [[2225번 상세보기](https://www.acmicpc.net/problem/2225)]
 * 암호코드 [[2011번 상세보기](https://www.acmicpc.net/problem/2011)]
 
