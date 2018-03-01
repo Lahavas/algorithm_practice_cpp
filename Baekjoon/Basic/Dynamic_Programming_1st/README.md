@@ -26,7 +26,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 * [타일 채우기](./타일_채우기) [[2133번 상세보기](https://www.acmicpc.net/problem/2133)]
 * [파도반 수열](./파도반_수열) [[9461번 상세보기](https://www.acmicpc.net/problem/9461)]
 * [합분해](./합분해) [[2225번 상세보기](https://www.acmicpc.net/problem/2225)]
-* 암호코드 [[2011번 상세보기](https://www.acmicpc.net/problem/2011)]
+* [암호코드](./암호코드) [[2011번 상세보기](https://www.acmicpc.net/problem/2011)]
 
 ### 풀이 전 알아야 할 개념
 
