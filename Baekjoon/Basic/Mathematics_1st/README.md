@@ -6,7 +6,7 @@ Baekjoon Online Judge 초급 Ch04. 수학1
 
 #### 문제
 
-* 나머지 [[10430번 상세보기](https://www.acmicpc.net/problem/10430)]
+* [나머지](./나머지) [[10430번 상세보기](https://www.acmicpc.net/problem/10430)]
 * 최대공약수와 최소공배수 [[2609번 상세보기](https://www.acmicpc.net/problem/2609)]
 * 최소공배수 [[1934번 상세보기](https://www.acmicpc.net/problem/1934)]
 * GCD 합 [[9613번 상세보기](https://www.acmicpc.net/problem/9613)]
