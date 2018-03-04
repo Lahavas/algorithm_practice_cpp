@@ -15,7 +15,7 @@ Baekjoon Online Judge 초급 Ch04. 수학1
 * [2진수 8진수](./2진수_8진수) [[1373번 상세보기](https://www.acmicpc.net/problem/1373)]
 * [8진수 2진수](./8진수_2진수) [[1212번 상세보기](https://www.acmicpc.net/problem/1212)]
 * [-2진수](./-2진수) [[2089번 상세보기](https://www.acmicpc.net/problem/2089)]
-* Base Conversion [[11576번 상세보기](https://www.acmicpc.net/problem/11576)]
+* [Base Conversion](./Base_Conversion) [[11576번 상세보기](https://www.acmicpc.net/problem/11576)]
 * 소수 찾기 [[1978번 상세보기](https://www.acmicpc.net/problem/1978)]
 * 소수 구하기 [[1929번 상세보기](https://www.acmicpc.net/problem/1929)]
 * 골드바흐의 추측 [[6588번 상세보기](https://www.acmicpc.net/problem/6588)]
