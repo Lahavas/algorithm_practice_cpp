@@ -11,7 +11,7 @@ Baekjoon Online Judge 초급 Ch04. 수학1
 * [최소공배수](./최소공배수) [[1934번 상세보기](https://www.acmicpc.net/problem/1934)]
 * [GCD 합](./GCD_합) [[9613번 상세보기](https://www.acmicpc.net/problem/9613)]
 * [진법 변환 2](./진법_변환_2) [[11005번 상세보기](https://www.acmicpc.net/problem/11005)]
-* 진법 변환 [[2745번 상세보기](https://www.acmicpc.net/problem/2745)]
+* [진법 변환](./진법_변환) [[2745번 상세보기](https://www.acmicpc.net/problem/2745)]
 * 2진수 8진수 [[1373번 상세보기](https://www.acmicpc.net/problem/1373)]
 * 8진수 2진수 [[1212번 상세보기](https://www.acmicpc.net/problem/1212)]
 * -2진수 [[2089번 상세보기](https://www.acmicpc.net/problem/2089)]
