@@ -17,7 +17,7 @@ Baekjoon Online Judge 초급 Ch04. 수학1
 * [-2진수](./-2진수) [[2089번 상세보기](https://www.acmicpc.net/problem/2089)]
 * [Base Conversion](./Base_Conversion) [[11576번 상세보기](https://www.acmicpc.net/problem/11576)]
 * [소수 찾기](./소수_찾기) [[1978번 상세보기](https://www.acmicpc.net/problem/1978)]
-* 소수 구하기 [[1929번 상세보기](https://www.acmicpc.net/problem/1929)]
+* [소수 구하기](./소수_구하기) [[1929번 상세보기](https://www.acmicpc.net/problem/1929)]
 * 골드바흐의 추측 [[6588번 상세보기](https://www.acmicpc.net/problem/6588)]
 * 소인수분해 [[11653번 상세보기](https://www.acmicpc.net/problem/11653)]
 * 팩토리얼 [[10872번 상세보기](https://www.acmicpc.net/problem/10872)]
