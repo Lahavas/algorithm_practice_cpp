@@ -27,7 +27,7 @@ int main()
     cin >> m >> n;
     
     for ( int i = m; i <= n; ++i ) {
-        if ( check[i] == true ) {
+        if ( check[i] == false ) {
             cout << check[i] << endl;
         }
     }
