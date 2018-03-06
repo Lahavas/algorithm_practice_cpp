@@ -13,7 +13,7 @@ int main()
     
     for ( int i = 2; i * i <= MAX; ++i ) {
         if ( check[i] == false ) {
-            for ( int j = i + i; j <= MAX; j += i ) {
+            for ( int j = i * i; j <= MAX; j += i ) {
                 check[j] = true;
             }
         }
@@ -24,7 +24,7 @@ int main()
     
     for ( int i = m; i <= n; ++i ) {
         if ( check[i] == false ) {
-            cout << i << endl;
+            cout << i << '\n';
         }
     }
     
