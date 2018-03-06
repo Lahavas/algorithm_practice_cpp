@@ -21,5 +21,5 @@ Baekjoon Online Judge 초급 Ch04. 수학1
 * 골드바흐의 추측 [[6588번 상세보기](https://www.acmicpc.net/problem/6588)]
 * [소인수분해](./소인수분해) [[11653번 상세보기](https://www.acmicpc.net/problem/11653)]
 * [팩토리얼](./팩토리얼) [[10872번 상세보기](https://www.acmicpc.net/problem/10872)]
-* 팩토리얼 0의 개수 [[1676번 상세보기](https://www.acmicpc.net/problem/1676)]
+* [팩토리얼 0의 개수](./팩토리얼_0의_개수) [[1676번 상세보기](https://www.acmicpc.net/problem/1676)]
 * 조합 0의 개수 [[2004번 상세보기](https://www.acmicpc.net/problem/2004)]
