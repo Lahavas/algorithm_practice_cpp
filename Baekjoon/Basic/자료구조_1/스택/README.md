@@ -54,9 +54,9 @@ int main() {
 #include <iostream>
 #include <string>
 
-#define MAX 10000
-
 using namespace std;
+
+constexpr int MAX = 10000;
 
 struct Stack {
     int data[MAX];
