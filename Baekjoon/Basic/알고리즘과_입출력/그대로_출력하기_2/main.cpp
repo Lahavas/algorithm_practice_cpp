@@ -1,13 +1,16 @@
-#include <cstdio>
+#include <iostream>
+#include <string>
 
-#define MAX 100
+using namespace std;
 
-int main() {
+int main() 
+{
+    ios_base::sync_with_stdio(false);
 
-    char s[MAX];
+    string s;
 
-    while ( fgets(s, sizeof(s), stdin) != NULL ) {
-        printf("%s", s);
+    while ( getline(cin, s) ) {
+        cout << s << '\n';
     }
 
     return 0;

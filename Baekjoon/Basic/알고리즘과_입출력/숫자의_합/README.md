@@ -6,14 +6,15 @@
 ~~~ cpp
 #include <cstdio>
 
-int main() {
-    int tc;
-    scanf("%d", &tc);
+int main() 
+{
+    int cnt = 0;
+    scanf("%d", &cnt);
 
     int sum = 0;
 
-    while ( tc-- ) {
-        int num;
+    while ( cnt-- ) {
+        int num = 0;
         scanf("%1d", &num);
         sum += num;
     }
@@ -32,19 +33,20 @@ int main() {
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
-    int tc;
-    cin >> tc;
+    int cnt = 0;
+    cin >> cnt;
 
     string s;
     cin >> s;
 
     int sum = 0;
 
-    for ( int i = 0; i < tc; i++ ) {
-        int num = s.at(i) - '0';
+    for ( int i = 0; i < cnt; ++i ) {
+        int num = s[i] - '0';
         sum += num;
     }
 

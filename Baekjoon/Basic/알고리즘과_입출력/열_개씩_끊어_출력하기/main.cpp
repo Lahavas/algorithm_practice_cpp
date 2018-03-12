@@ -1,12 +1,25 @@
-#include <cstdio>
+#include <iostream>
+#include <string>
 
-#define MAX 110
+using namespace std;
 
-int main() {
-    char s[MAX];
-    
-    while ( scanf("%10s", s) == 1 ) {
-        printf("%s\n", s);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
+
+    string s;
+    cin >> s;
+
+    int cnt = 10;
+
+    for ( int i = 0; i < s.size(); ++i ) {
+        --cnt;
+        cout << s[i];
+
+        if ( cnt == 0 ) {
+            cnt = 10;
+            cout << '\n';
+        }
     }
 
     return 0;

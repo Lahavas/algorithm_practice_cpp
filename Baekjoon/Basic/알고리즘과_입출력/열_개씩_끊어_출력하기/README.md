@@ -6,10 +6,11 @@
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 110
+constexpr int MAX = 110;
 
-int main() {
-    char s[MAX];
+int main() 
+{
+    char s[MAX] = { NULL };
     
     while ( scanf("%10s", s) == 1 ) {
         printf("%s\n", s);
@@ -27,7 +28,8 @@ int main() {
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
     string s;
@@ -35,13 +37,13 @@ int main() {
 
     int cnt = 10;
 
-    for ( int i = 0; i < s.size(); i++ ) {
-        cnt--;
-        cout << s.at(i);
+    for ( int i = 0; i < s.size(); ++i ) {
+        --cnt;
+        cout << s[i];
 
         if ( cnt == 0 ) {
             cnt = 10;
-            cout << endl;
+            cout << '\n';
         }
     }
 

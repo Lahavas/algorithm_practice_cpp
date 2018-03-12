@@ -1,7 +1,10 @@
 2741번 N찍기
 ----------
 
-1. iostream header를 사용하여 입출력하기
+1부터 N까지 각 Line에 출력하는 문제입니다.
+for문을 사용하여 각 인덱스를 출력하여 문제를 해결할 수 있습니다.
+
+1. iostream header를 사용하여 입출력
 
 ~~~ cpp
 #include <iostream>
@@ -23,7 +26,7 @@ int main()
 }
 ~~~
 
-2. cstdio header를 사용하여 입출력하기
+2. cstdio header를 사용하여 입출력
 
 ~~~ cpp
 #include <cstdio>

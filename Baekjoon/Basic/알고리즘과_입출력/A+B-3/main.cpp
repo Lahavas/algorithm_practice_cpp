@@ -1,13 +1,18 @@
-#include <cstdio>
+#include <iostream>
 
-int main()  {
-    int tc;
-    scanf("%d", &tc);
+using namespace std;
 
-    while ( tc-- ) {
-        int a, b;
-        scanf("%d %d", &a, &b);
-        printf("%d\n", a + b);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
+
+    int cnt = 0;
+    cin >> cnt;
+
+    while ( cnt-- ) {
+        int a = 0, b = 0;
+        cin >> a >> b;
+        cout << a + b << '\n';
     }
 
     return 0;

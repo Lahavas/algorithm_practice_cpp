@@ -3,24 +3,25 @@
 
 테스트 케이스가 존재하지 않는 대신 입력값이 0일 때 반복문을 빠져나오도록 설계해야합니다.
 
-1. iostream 사용
+1. iostream header를 사용하여 입출력
 
 ~~~ cpp
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
-    int a, b;
+    int a = 0, b = 0;
 
     while ( true ) {
         cin >> a >> b;
         if ( a == 0 && b == 0 ) {
             break;
         } else {
-            cout << a + b << endl;
+            cout << a + b << '\n';
         }
     }
 
@@ -28,16 +29,18 @@ int main() {
 }
 ~~~
 
-2. cstdio 사용
+2. cstdio header를 사용하여 입출력
 
 ~~~ cpp
 #include <cstdio>
 
-int main() {
-    int a, b;
+int main() 
+{
+    int a = 0, b = 0;
 
     while ( true ) {
         scanf("%d %d", &a, &b);
+
         if ( a == 0 && b == 0 ) {
             break;
         } else {

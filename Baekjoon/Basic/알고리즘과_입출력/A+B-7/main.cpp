@@ -1,13 +1,18 @@
-#include <cstdio>
+#include <iostream>
 
-int main() {
-    int tc;
-    scanf("%d", &tc);
+using namespace std;
 
-    for ( int i = 1; i <= tc; i++ ) {
-        int a, b;
-        scanf("%d %d", &a, &b);
-        printf("Case #%d: %d\n", i, a + b);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
+
+    int cnt = 0;
+    cin >> cnt;
+
+    for ( int i = 1; i <= cnt; ++i ) {
+        int a = 0, b = 0;
+        cin >> a >> b;
+        cout << "Case #" << i << ": " << a + b << '\n';
     }
 
     return 0;

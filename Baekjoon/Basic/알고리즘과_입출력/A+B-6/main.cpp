@@ -1,11 +1,11 @@
 #include <cstdio>
 
 int main() {
-    int tc;
-    scanf("%d", &tc);
+    int cnt = 0;
+    scanf("%d", &cnt);
 
-    while ( tc-- ) {
-        int a, b;
+    while ( cnt-- ) {
+        int a = 0, b = 0;
         scanf("%d,%d", &a, &b);
         printf("%d\n", a + b);
     }
