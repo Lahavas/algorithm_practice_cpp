@@ -20,7 +20,35 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [숫자의 합](./숫자의_합) [[11720번 상세보기](https://www.acmicpc.net/problem/11720)]
 * [열 개씩 끊어 출력하기](./열_개씩_끊어_출력하기) [[11721번 상세보기](https://www.acmicpc.net/problem/11721)]
 
+### 추가 문제
+
+* N찍기 [[2741번 상세보기](https://www.acmicpc.net/problem/2741)]
+* 기찍 N [[2742번 상세보기](https://www.acmicpc.net/problem/2742)]
+* 구구단 [[2739번 상세보기](https://www.acmicpc.net/problem/2739)]
+* 2007년 [[1924번 상세보기](https://www.acmicpc.net/problem/1924)]
+* Sum [[8393번 상세보기](https://www.acmicpc.net/problem/8393)]
+* 최소, 최대 [[10818번 상세보기](https://www.acmicpc.net/problem/10818)]
+* 별찍기 - 1 [[2438번 상세보기](https://www.acmicpc.net/problem/2438)]
+* 별찍기 - 2 [[2439번 상세보기](https://www.acmicpc.net/problem/2439)]
+* 별찍기 - 3 [[2440번 상세보기](https://www.acmicpc.net/problem/2440)]
+* 별찍기 - 4 [[2441번 상세보기](https://www.acmicpc.net/problem/2441)]
+* 별찍기 - 5 [[2442번 상세보기](https://www.acmicpc.net/problem/2442)]
+* 별찍기 - 7 [[2444번 상세보기](https://www.acmicpc.net/problem/2444)]
+* 별찍기 - 8 [[2445번 상세보기](https://www.acmicpc.net/problem/2445)]
+* 별찍기 - 9 [[2446번 상세보기](https://www.acmicpc.net/problem/2446)]
+* 별찍기 - 12 [[2522번 상세보기](https://www.acmicpc.net/problem/2522)]
+* 별찍기 - 16 [[10991번 상세보기](https://www.acmicpc.net/problem/10991)]
+* 별찍기 - 17 [[10992번 상세보기](https://www.acmicpc.net/problem/10992)]
+
 ### 풀이 전 알아야 할 개념
+
+#### 시간 복잡도
+
+Big O Notation을 사용하여 시간이 얼마나 걸릴지 예상할 수 있습니다.
+대략적으로 O(1) < O(logN) < O(N) < O(NlogN) < O(N^2) < O(N^3) < O(2^N) < O(N!) 입니다.
+백준 온라인 저지의 문제를 풀 경우, 최대의 입력값을 대입할 경우 1억이 나올 경우 대략 1초가 걸립니다.
+O(2^N)은 보통 크기가 N인 집합의 부분 집합을 나타낼 때 확인할 수 있으며,
+O(N!은 보통 크기가 N인 순열을 나타낼 때 확인할 수 있습니다.
 
 #### C++14의 입/출력
 
@@ -77,6 +105,7 @@ int main() {
 
         format string에서의 %[]는 대괄호 내부의 문자만 입력받겠다는 표현입니다.  
         그리고 대괄호 안의 ^는 뒤의 문자를 제외하겠다는 표현입니다.
+        scanf는 앞의 whitespace을 무시하며, 
     
     3. `getline(cin, string);`
 
