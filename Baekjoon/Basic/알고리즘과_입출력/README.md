@@ -22,7 +22,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 
 ### 추가 문제
 
-* N찍기 [[2741번 상세보기](https://www.acmicpc.net/problem/2741)]
+* [N찍기](./N찍기) [[2741번 상세보기](https://www.acmicpc.net/problem/2741)]
 * 기찍 N [[2742번 상세보기](https://w`ww.acmicpc.net/problem/2742)]
 * 구구단 [[2739번 상세보기](https://www.acmicpc.net/problem/2739)]
 * 2007년 [[1924번 상세보기](https://www.acmicpc.net/problem/1924)]
