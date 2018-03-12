@@ -25,7 +25,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [N찍기](./N찍기) [[2741번 상세보기](https://www.acmicpc.net/problem/2741)]
 * [기찍 N](./기찍_N) [[2742번 상세보기](https://www.acmicpc.net/problem/2742)]
 * [구구단](./구구단) [[2739번 상세보기](https://www.acmicpc.net/problem/2739)]
-* 2007년 [[1924번 상세보기](https://www.acmicpc.net/problem/1924)]
+* [2007년](./2007년) [[1924번 상세보기](https://www.acmicpc.net/problem/1924)]
 * Sum [[8393번 상세보기](https://www.acmicpc.net/problem/8393)]
 * 최소, 최대 [[10818번 상세보기](https://www.acmicpc.net/problem/10818)]
 * 별찍기 - 1 [[2438번 상세보기](https://www.acmicpc.net/problem/2438)]
