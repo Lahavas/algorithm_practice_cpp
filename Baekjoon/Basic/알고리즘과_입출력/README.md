@@ -29,7 +29,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [합](./합) [[8393번 상세보기](https://www.acmicpc.net/problem/8393)]
 * [최소, 최대](./최소_최대) [[10818번 상세보기](https://www.acmicpc.net/problem/10818)]
 * [별찍기 - 1](./별찍기-1) [[2438번 상세보기](https://www.acmicpc.net/problem/2438)]
-* 별찍기 - 2 [[2439번 상세보기](https://www.acmicpc.net/problem/2439)]
+* [별찍기 - 2](./별찍기-2) [[2439번 상세보기](https://www.acmicpc.net/problem/2439)]
 * 별찍기 - 3 [[2440번 상세보기](https://www.acmicpc.net/problem/2440)]
 * 별찍기 - 4 [[2441번 상세보기](https://www.acmicpc.net/problem/2441)]
 * 별찍기 - 5 [[2442번 상세보기](https://www.acmicpc.net/problem/2442)]

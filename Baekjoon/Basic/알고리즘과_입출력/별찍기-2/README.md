@@ -1,4 +1,4 @@
-2438번 별찍기 - 1
+2439번 별찍기 - 2
 ---------------
 
 직각 이등변 삼각형 모양의 별을 찍는 문제입니다.  
@@ -19,9 +19,14 @@ int main()
     cin >> n;
 
     for ( int i = 1; i <= n; ++i ) {
-        for ( int j = 1; j <= i; ++j ) {
-            cout << "*";
+        for ( int j = 1; j <= n; ++j ) {
+            if ( j <= n - i ) {
+                cout << " ";
+            } else {
+                cout << "*";
+            }
         }
+
         cout << "\n";
     }
 
@@ -40,8 +45,12 @@ int main()
     scanf("%d", &n);
 
     for ( int i = 1; i <= n; ++i ) {
-        for ( int j = 1; j <= i; ++j ) {
-            putchar('*');
+        for ( int j = 1; j <= n; ++j ) {
+            if ( j <= n - i ) {
+                putchar(' ');
+            } else {
+                putchar('*');
+            }
         }
         putchar('\n');
     }
