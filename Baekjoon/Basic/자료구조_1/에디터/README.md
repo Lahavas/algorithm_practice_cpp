@@ -9,37 +9,40 @@
 #include <cstdio>
 #include <stack>
 
-#define MAX 600000
+using namespace std;
 
-std::stack<char> lst;
-std::stack<char> rst;
+constexpr int MAX = 600000;
+
+stack<char> ls;
+stack<char> rs;
 
 void updateEditor(char cmd) {
     switch ( cmd ) {
         case 'L':
-            if ( !lst.empty() ) {
-                rst.push(lst.top());
-                lst.pop();
+            if ( !ls.empty() ) {
+                rs.push(ls.top());
+                ls.pop();
             }
             break;
         case 'D':
-            if ( !rst.empty() ) {
-                lst.push(rst.top());
-                rst.pop();
+            if ( !rs.empty() ) {
+                ls.push(rs.top());
+                rs.pop();
             }
             break;
         case 'B':
-            if ( !lst.empty() ) {
-                lst.pop();
+            if ( !ls.empty() ) {
+                ls.pop();
             }
             break;
-        case 'P':
-            char input;
+        case 'P': {
+            char input = '\0';
             scanf("%c", &input);
             getchar();
 
-            lst.push(input);
+            ls.push(input);
             break;
+        }
         default:
             break;
     }
@@ -48,39 +51,39 @@ void updateEditor(char cmd) {
 }
 
 void printEditor() {
-    while ( !lst.empty() ) {
-        rst.push(lst.top());
-        lst.pop();
+    while ( !ls.empty() ) {
+        rs.push(ls.top());
+        ls.pop();
     }
 
-    while ( !rst.empty() ) {
-        printf("%c", rst.top());
-        rst.pop();
+    while ( !rs.empty() ) {
+        printf("%c", rs.top());
+        rs.pop();
     }
 
-    puts("");
+    putchar('\n');
 
     return;
 }
 
 int main() {
-    char s[MAX];
-    scanf("%s", s);
+    char a[MAX] = { '\0' };
+    scanf("%s", a);
 
-    int tc;
-    scanf("%d", &tc);
+    int cnt = 0;
+    scanf("%d", &cnt);
     getchar();
 
-    for ( int i = 0; i < MAX; i++ ) {
-        if ( s[i] ) {
-            lst.push(s[i]);
+    for ( int i = 0; i < MAX; ++i ) {
+        if ( a[i] ) {
+            ls.push(a[i]);
         } else {
             break;
         }
     }
 
-    while ( tc-- ) {
-        char cmd;
+    while ( cnt-- ) {
+        char cmd = '\0';
         scanf("%c", &cmd);
         getchar();
 

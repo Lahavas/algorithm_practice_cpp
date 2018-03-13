@@ -5,47 +5,50 @@
 예외적인 경우는 '(' 다음에 ')'이 오는 경우인데, 이 땐 긴 쇠막대기의 갯수만큼 전체 쇠막대기 갯수를 늘려야합니다.  
 Stack을 이용할 경우에 입력하는 괄호의 배열이 ')'가 먼저 오는 경우, 즉 Stack이 비어있을 때 Pop이 오는 경우가 존재하지 않음으로 따로 예외 처리를 해 줄 필요는 없습니다.
 
-1. cstdio 사용, stack 사용 안함
+1. cstdio header를 사용하여 입출력, stack 사용 안함
 
 ~~~ cpp
 #include <cstdio>
+#include <cstring>
 
-#define MAX 100000
+constexpr int MAX = 100000;
 
-int countRod(char* s) {
+int countRod(char *a) 
+{
     int rod = 0;
-    int result = 0;
+    int res = 0;
 
-    for ( int i = 0; i < MAX; i++ ) {
-        if ( s[i] == '(' ) {
-            if ( s[i + 1] == ')' ) {
-                result += rod;
-                i++;
+    for ( int i = 0; i < strlen(a); ++i ) {
+        if ( a[i] == '(' ) {
+            if ( a[i + 1] == ')' ) {
+                res += rod;
+                i += 1;
             } else {
-                rod++;
+                rod += 1;
             }
-        } else if ( s[i] == ')' ) {
-            result++;
-            rod--;
+        } else if ( a[i] == ')' ) {
+            res += 1;
+            rod -= 1;
         } else {
             break;
         }
     } 
 
-    return result;
+    return res;
 }
 
-int main() {
-    char s[MAX];
-    scanf("%s", s);
+int main() 
+{
+    char a[MAX] = { '\0' };
+    scanf("%s", a);
 
-    printf("%d\n", countRod(s));
+    printf("%d\n", countRod(a));
 
     return 0;
 }
 ~~
 
-2. iostream, stack 사용
+2. iostream header를 사용하여 입출력, stack 사용
 
 ~~~ cpp
 #include <iostream>
@@ -54,36 +57,38 @@ int main() {
 
 using namespace std;
 
-int countRod(string s) {
-    stack<int> st;
-    int result = 0;
+int countRod(string a) 
+{
+    stack<int> s;
+    int res = 0;
 
-    int size = s.size();
+    int size = a.size();
 
-    for ( int i = 0; i < size; i++ ) {
-        if ( s[i] == '(' ) {
-            st.push(i);
+    for ( int i = 0; i < size; ++i ) {
+        if ( a[i] == '(' ) {
+            s.push(i);
         } else {
-            if ( st.top() + 1 == i ) {
-                st.pop();
-                result += st.size();
+            if ( s.top() + 1 == i ) {
+                s.pop();
+                res += s.size();
             } else {
-                st.pop();
-                result += 1;
+                s.pop();
+                res += 1;
             }
         }
     } 
 
-    return result;
+    return res;
 }
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
-    string s;
-    cin >> s;
+    string a;
+    cin >> a;
 
-    cout << countRod(s) << endl;;
+    cout << countRod(a) << endl;;
 
     return 0;
 }

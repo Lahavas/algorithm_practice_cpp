@@ -10,7 +10,7 @@ int main()
     string s;
 
     while ( getline(cin, s) ) {
-        cout << s << endl;
+        cout << s << '\n';
     }
 
     return 0;

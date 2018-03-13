@@ -12,15 +12,15 @@ int main()
 
     int cnt = 10;
 
-    for ( int i = 0; i < s.size(); ++i ) {
-        --cnt;
-        cout << s[i];
+    for ( auto c : s ) {
+        cnt -= 1;
+        cout << c;
 
         if ( cnt == 0 ) {
             cnt = 10;
-            cout << '\n';
+            cout << "\n";
         }
     }
-
+    
     return 0;
 }

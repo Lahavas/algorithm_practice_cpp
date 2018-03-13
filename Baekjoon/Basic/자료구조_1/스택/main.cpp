@@ -4,33 +4,34 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
-    int tc;
-    cin >> tc;
+    int cnt = 0;
+    cin >> cnt;
 
-    stack<int> st;
+    stack<int> s;
 
-    while ( tc-- ) {
+    while ( cnt-- ) {
         string cmd;
         cin >> cmd;
 
         if ( cmd == "push" ) {
-            int num;
-            cin >> num;
-            st.push(num);
+            int n = 0;
+            cin >> n;
+            s.push(n);
         } else if ( cmd == "pop" ) {
-            cout << (st.empty() ? -1 : st.top()) << endl;
-            if ( !st.empty() ) {
-                st.pop();
+            cout << (s.empty() ? -1 : s.top()) << endl;
+            if ( !s.empty() ) {
+                s.pop();
             }
         } else if ( cmd == "size" ) {
-            cout << st.size() << endl;
+            cout << s.size() << endl;
         } else if ( cmd == "empty" ) {
-            cout << (st.empty() ? 1 : 0) << endl;
+            cout << (s.empty() ? 1 : 0) << endl;
         } else if ( cmd == "top" ) {
-            cout << (st.empty() ? -1 : st.top()) << endl;
+            cout << (s.empty() ? -1 : s.top()) << endl;
         }
     }
 

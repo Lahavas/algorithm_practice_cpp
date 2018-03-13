@@ -1,35 +1,40 @@
-#include <cstdio>
+#include <iostream>
+#include <string>
 
-#define MAX 50
+using namespace std;
 
-bool isValid(char* ps) {
-    int cnt = 0;
+bool isValid(string ps) 
+{
+    int n = 0;
 
-    for ( int i = 0; i < MAX; i++ ) {
-        if ( ps[i] == '(' ) {
-            cnt++;
-        } else if ( ps[i] == ')' ) {
-            cnt--;
+    for ( auto a : ps ) {
+        if ( a == '(' ) {
+            n += 1;
+        } else if ( a == ')' ) {
+            n -= 1;
         } else {
             break;
         }
 
-        if ( cnt < 0 ) {
+        if ( n < 0 ) {
             return false;
         }
     }
 
-    return (cnt == 0 ? true : false);
+    return (n == 0 ? true : false);
 }
 
-int main() {
-    int tc;
-    scanf("%d", &tc);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
 
-    char ps[MAX];
+    int cnt = 0;
+    cin >> cnt;
 
-    while ( tc-- ) {
-        scanf("%s", ps);
+    string ps;
+
+    while ( cnt-- ) {
+        cin >> ps;
 
         if ( isValid(ps) == true ) {
             printf("YES\n");

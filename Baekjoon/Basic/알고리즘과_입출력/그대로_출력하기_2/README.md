@@ -16,9 +16,9 @@ constexpr int MAX = 100;
 int main() 
 {
 
-    char s[MAX] = { NULL };
+    char s[MAX] = { '\0' };
 
-    while ( fgets(s, sizeof(s), stdin) != NULL ) {
+    while ( fgets(s, sizeof(s), stdin) != nullptr ) {
         printf("%s", s);
     }
 
