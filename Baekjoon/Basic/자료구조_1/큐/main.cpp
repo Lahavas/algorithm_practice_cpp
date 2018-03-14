@@ -4,35 +4,36 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
-    int tc;
-    cin >> tc;
+    int cnt = 0;
+    cin >> cnt;
 
-    queue<int> qu;
+    queue<int> q;
 
-    while ( tc-- ) {
+    while ( cnt-- ) {
         string cmd;
         cin >> cmd;
 
         if ( cmd == "push" ) {
-            int num;
+            int num = 0;
             cin >> num;
-            qu.push(num);
+            q.push(num);
         } else if ( cmd == "pop" ) {
-            cout << (qu.empty() ? -1 : qu.front()) << endl;
-            if ( !qu.empty() ) {
-                qu.pop();
+            cout << (q.empty() ? -1 : q.front()) << '\n';
+            if ( !q.empty() ) {
+                q.pop();
             }
         } else if ( cmd == "size" ) {
-            cout << qu.size() << endl;
+            cout << q.size() << '\n';
         } else if ( cmd == "empty" ) {
-            cout << (qu.empty() ? 1 : 0) << endl;
+            cout << (q.empty() ? 1 : 0) << '\n';
         } else if ( cmd == "front" ) {
-            cout << (qu.empty() ? -1 : qu.front()) << endl;
+            cout << (q.empty() ? -1 : q.front()) << '\n';
         } else if ( cmd == "back" ) {
-            cout << (qu.empty() ? -1 : qu.back()) << endl;
+            cout << (q.empty() ? -1 : q.back()) << '\n';
         }
     }
 

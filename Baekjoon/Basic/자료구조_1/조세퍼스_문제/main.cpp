@@ -1,35 +1,40 @@
-#include <cstdio>
+#include <iostream>
 #include <queue>
 
-int main() {
-    int m, n;
-    scanf("%d %d", &m, &n);
+using namespace std;
 
-    std::queue<int> qu;
+int main()
+{
+    ios_base::sync_with_stdio(false);
 
-    for ( int i = 1; i <= m; i++ ) {
-        qu.push(i);
+    int m = 0, n = 0;
+    cin >> m >> n;
+
+    queue<int> q;
+
+    for ( int i = 1; i <= m; ++i ) {
+        q.push(i);
     }
 
-    printf("<");
+    cout << '<';
 
-    while ( !qu.empty() ) {
-        for ( int i = 1; i <= n; i++ ) {
+    while ( !q.empty() ) {
+        for ( int i = 1; i <= n; ++i ) {
             if ( i == n ) {
-                printf("%d", qu.front());
-                qu.pop();
+                cout << q.front();
+                q.pop();
             } else {
-                qu.push(qu.front());
-                qu.pop();
+                q.push(q.front());
+                q.pop();
             }
         }
 
-        if ( qu.size() != 0 ) {
-            printf(", ");
+        if ( q.size() != 0 ) {
+            cout << ", ";
         }
     }
 
-    printf(">\n");
+    cout << '>' << '\n';
 
     return 0;
 }

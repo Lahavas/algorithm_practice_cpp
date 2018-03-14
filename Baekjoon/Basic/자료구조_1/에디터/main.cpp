@@ -1,37 +1,48 @@
-#include <cstdio>
+#include <iostream>
 #include <stack>
+#include <string>
 
-#define MAX 600000
+using namespace std;
 
-std::stack<char> lst;
-std::stack<char> rst;
+stack<char> ls;
+stack<char> rs;
 
-void updateEditor(char cmd) {
-    switch ( cmd ) {
+void initEditor(string s)
+{
+    for ( auto c : s ) {
+        ls.push(c);
+    }
+
+    return;
+}
+
+void updateEditor(char cmd) 
+{
+    switch (cmd) {
         case 'L':
-            if ( !lst.empty() ) {
-                rst.push(lst.top());
-                lst.pop();
+            if ( !ls.empty() ) {
+                rs.push(ls.top());
+                ls.pop();
             }
             break;
         case 'D':
-            if ( !rst.empty() ) {
-                lst.push(rst.top());
-                rst.pop();
+            if ( !rs.empty() ) {
+                ls.push(rs.top());
+                rs.pop();
             }
             break;
-        case 'B':
-            if ( !lst.empty() ) {
-                lst.pop();
+            case 'B':
+            if ( !ls.empty() ) {
+                ls.pop();
             }
             break;
-        case 'P':
-            char input;
-            scanf("%c", &input);
-            getchar();
+        case 'P': {
+            char input = '\0';
+            cin >> input;
 
-            lst.push(input);
+            ls.push(input);
             break;
+        }
         default:
             break;
     }
@@ -39,42 +50,38 @@ void updateEditor(char cmd) {
     return;
 }
 
-void printEditor() {
-    while ( !lst.empty() ) {
-        rst.push(lst.top());
-        lst.pop();
+void printEditor()
+{
+    while ( !ls.empty() ) {
+        rs.push(ls.top());
+        ls.pop();
     }
 
-    while ( !rst.empty() ) {
-        printf("%c", rst.top());
-        rst.pop();
+    while ( !rs.empty() ) {
+        cout << rs.top();
+        rs.pop();
     }
 
-    puts("");
+    cout << '\n';
 
     return;
 }
 
-int main() {
-    char s[MAX];
-    scanf("%s", s);
+int main()
+{
+    ios_base::sync_with_stdio(false);
 
-    int tc;
-    scanf("%d", &tc);
-    getchar();
+    string s;
+    cin >> s;
 
-    for ( int i = 0; i < MAX; i++ ) {
-        if ( s[i] ) {
-            lst.push(s[i]);
-        } else {
-            break;
-        }
-    }
+    initEditor(s);
 
-    while ( tc-- ) {
-        char cmd;
-        scanf("%c", &cmd);
-        getchar();
+    int cnt = 0;
+    cin >> cnt;
+
+    while ( cnt-- ) {
+        char cmd = '\0';
+        cin >> cmd;
 
         updateEditor(cmd);
     }

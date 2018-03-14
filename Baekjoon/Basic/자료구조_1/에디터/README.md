@@ -5,6 +5,8 @@
 커서를 기준으로 왼쪽 문자열을 저장할 스택과 오른쪽 문자열을 저장할 스택, 총 두개의 스택을 이용하여 문제를 해결할 수 있습니다.  
 결과를 출력할 때는 시작점은 왼쪽 문자열 스택의 bottom 부분이고, 도착점은 오른쪽 문자열 스택의 bottom 부분이므로 왼쪽 문자열 스택을 오른쪽 문자열 스택으로 이동시킨 뒤에 오른쪽 문자열 스택을 차례대로 출력하는 방법을 추천합니다.
 
+1. cstdio header를 사용하여 입출력
+
 ~~~ cpp
 #include <cstdio>
 #include <stack>
@@ -16,7 +18,8 @@ constexpr int MAX = 600000;
 stack<char> ls;
 stack<char> rs;
 
-void updateEditor(char cmd) {
+void updateEditor(char cmd) 
+{
     switch ( cmd ) {
         case 'L':
             if ( !ls.empty() ) {
@@ -50,7 +53,8 @@ void updateEditor(char cmd) {
     return;
 }
 
-void printEditor() {
+void printEditor() 
+{
     while ( !ls.empty() ) {
         rs.push(ls.top());
         ls.pop();
@@ -66,7 +70,8 @@ void printEditor() {
     return;
 }
 
-int main() {
+int main() 
+{
     char a[MAX] = { '\0' };
     scanf("%s", a);
 
@@ -86,6 +91,103 @@ int main() {
         char cmd = '\0';
         scanf("%c", &cmd);
         getchar();
+
+        updateEditor(cmd);
+    }
+
+    printEditor();
+
+    return 0;
+}
+~~~
+
+2. iostream을 사용하여 입출력
+
+~~~ cpp
+#include <iostream>
+#include <stack>
+#include <string>
+
+using namespace std;
+
+stack<char> ls;
+stack<char> rs;
+
+void initEditor(string s)
+{
+    for ( auto c : s ) {
+        ls.push(c);
+    }
+
+    return;
+}
+
+void updateEditor(char cmd) 
+{
+    switch (cmd) {
+        case 'L':
+            if ( !ls.empty() ) {
+                rs.push(ls.top());
+                ls.pop();
+            }
+            break;
+        case 'D':
+            if ( !rs.empty() ) {
+                ls.push(rs.top());
+                rs.pop();
+            }
+            break;
+            case 'B':
+            if ( !ls.empty() ) {
+                ls.pop();
+            }
+            break;
+        case 'P': {
+            char input = '\0';
+            cin >> input;
+
+            ls.push(input);
+            break;
+        }
+        default:
+            break;
+    }
+
+    return;
+}
+
+void printEditor()
+{
+    while ( !ls.empty() ) {
+        rs.push(ls.top());
+        ls.pop();
+    }
+
+    while ( !rs.empty() ) {
+        cout << rs.top();
+        rs.pop();
+    }
+
+    cout << '\n';
+
+    return;
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+
+    string s;
+    cin >> s;
+
+    initEditor(s);
+
+    int cnt = 0;
+    cin >> cnt;
+
+    while ( cnt-- ) {
+        char cmd = '\0';
+        cin >> cmd;
 
         updateEditor(cmd);
     }

@@ -9,10 +9,11 @@
 #include <cstdio>
 #include <cstring>
 
-#define MAX 102
+constexpr int MAX = 102;
 
-int main() {
-    char s[MAX];
+int main() 
+{
+    char s[MAX] = { '\0' };
 
     while ( fgets(s, sizeof(s), stdin) != NULL ) {
         int lower = 0;
@@ -24,13 +25,13 @@ int main() {
 
         for ( int i = 0; i < len; i++ ) {
             if ( s[i] >= 'a' && s[i] <= 'z' ) {
-                lower++;
+                lower += 1;
             } else if ( s[i] >= 'A' && s[i] <= 'Z' ) {
-                upper++;
+                upper += 1;
             } else if ( s[i] >= '0' && s[i] <= '9' ) {
-                number++;
+                number += 1;
             } else if ( s[i] == ' ' ) {
-                space++;
+                space += 1;
             }
         }
 
@@ -49,7 +50,8 @@ int main() {
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
     string s;
@@ -64,17 +66,17 @@ int main() {
 
         for ( int i = 0; i < len; i++ ) {
             if ( s[i] >= 'a' && s[i] <= 'z' ) {
-                lower++;
+                lower += 1;
             } else if ( s[i] >= 'A' && s[i] <= 'Z' ) {
-                upper++;
+                upper += 1;
             } else if ( s[i] >= '0' && s[i] <= '9' ) {
-                number++;
+                number += 1;
             } else if ( s[i] == ' ' ) {
-                space++;
+                space += 1;
             }
         }
 
-        cout << lower << ' ' << upper << ' ' << number << ' ' << space << endl;
+        cout << lower << ' ' << upper << ' ' << number << ' ' << space << '\n';
     }
 
     return 0;

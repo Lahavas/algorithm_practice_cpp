@@ -1,28 +1,27 @@
-#include <cstdio>
-#include <cstring>
+#include <iostream>
+#include <string>
+#include <algorithm>
 
-#define MAX 101
+using namespace std;
 
-int main() {
-    char s[MAX];
-    scanf("%s", s);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
 
-    for ( int i = 'a' ; i <= 'z'; i++ ) {
-        int index = -1;
+    string s;
+    cin >> s;
 
-        int len = strlen(s);
-
-        for ( int j = 0; j < len; j++ ) {
-            if ( i == s[j] ) {
-                index = j;
-                break;
-            }
+    for ( int i = 'a' ; i <= 'z'; ++i ) {
+        auto it = find(s.begin(), s.end(), i);
+    
+        if ( it == s.end() ) {
+            cout << -1 << ' ';
+        } else {
+            cout << (it - s.begin()) << ' ';
         }
-        
-        printf("%d ", index);
     }
 
-    printf("\n");
+    cout << '\n';
 
     return 0;
 }

@@ -1,9 +1,10 @@
-#include <cstdio>
-#include <cstring>
+#include <iostream>
+#include <string>
 
-#define MAX 101
+using namespace std;
 
-char ROT13(char c) {
+char rot13(char c) 
+{
     if ( c >= 'a' && c <= 'm' ) {
         return c + 13;
     } else if ( c >= 'n' && c <= 'z' ) {
@@ -17,17 +18,18 @@ char ROT13(char c) {
     }
 }
 
-int main() {
-    char s[MAX];
-    fgets(s, sizeof(s), stdin);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
 
-    int len = strlen(s);
+    string s;
+    getline(cin, s);
 
-    for ( int i = 0; i < len; i++ ) {
-        s[i] = ROT13(s[i]);
+    for ( auto &c : s ) {
+        c = rot13(c);
     }
 
-    printf("%s\n", s);
+    cout << s << '\n';
 
     return 0;
 }

@@ -7,9 +7,10 @@
 #include <cstdio>
 #include <cstring>
 
-#define MAX 101
+constexpr int MAX = 101;
 
-char ROT13(char c) {
+char rot13(char c) 
+{
     if ( c >= 'a' && c <= 'm' ) {
         return c + 13;
     } else if ( c >= 'n' && c <= 'z' ) {
@@ -23,14 +24,15 @@ char ROT13(char c) {
     }
 }
 
-int main() {
-    char s[MAX];
+int main() 
+{
+    char s[MAX] = { '\0' };
     fgets(s, sizeof(s), stdin);
 
     int len = strlen(s);
 
-    for ( int i = 0; i < len; i++ ) {
-        s[i] = ROT13(s[i]);
+    for ( int i = 0; i < len; ++i ) {
+        s[i] = rot13(s[i]);
     }
 
     printf("%s\n", s);
@@ -47,7 +49,8 @@ int main() {
 
 using namespace std;
 
-char ROT13(char c) {
+char rot13(char c) 
+{
     if ( c >= 'a' && c <= 'm' ) {
         return c + 13;
     } else if ( c >= 'n' && c <= 'z' ) {
@@ -61,19 +64,18 @@ char ROT13(char c) {
     }
 }
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
     string s;
     getline(cin, s);
 
-    int len = s.length();
-
-    for ( int i = 0; i < len; i++ ) {
-        s[i] = ROT13(s[i]);
+    for ( auto &c : s ) {
+        c = rot13(c);
     }
 
-    cout << s << endl;
+    cout << s << '\n';
 
     return 0;
 }

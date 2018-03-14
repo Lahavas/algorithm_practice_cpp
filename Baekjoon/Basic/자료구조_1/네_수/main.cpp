@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
 
     int a, b, c, d;
@@ -14,7 +15,7 @@ int main() {
 
     long result = stol(s1) + stol(s2);
 
-    cout << result << endl;
+    cout << result << '\n';
 
     return 0;
 }

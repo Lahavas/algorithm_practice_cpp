@@ -1,20 +1,18 @@
-#include <cstdio>
+#include <iostream>
+#include <string>
 
-#define MAX 100
+using namespace std;
 
-int main() {
-    char s[MAX];
-    scanf("%s", s);
+int main() 
+{
+    ios_base::sync_with_stdio(false);
 
-    int len = 0;
-    for ( int i = 0; i < MAX; i++ ) {
-        if ( s[i] == '\0' ) {
-            break;
-        }
-        len++;
-    }
-    
-    printf("%d\n", len);
+    string s;
+    cin >> s;
+
+    int len = s.length();
+
+    cout << len << endl;
 
     return 0;
 }
