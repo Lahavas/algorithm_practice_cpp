@@ -23,7 +23,7 @@ int main()
         return strcmp(s.c_str() + u, s.c_str() + v) < 0;
     });
 
-    for ( auto &x : v ) {
+    for ( auto x : v ) {
         cout << s.substr(x) << '\n';
     }
 
