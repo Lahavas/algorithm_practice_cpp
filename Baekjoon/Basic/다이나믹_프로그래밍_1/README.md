@@ -41,7 +41,7 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
 2. Optimal Substructure
     * 큰 문제의 정답을 작은 문제의 정답에서 구할 수 있습니다.
 
-작은 문제를 기록하기 위해 배열을 구현하는 Memorization을 통해 다이나믹 프로그래밍을 구현할 수 있습니다.  
+작은 문제를 기록하기 위해 배열을 구현하는 Memoization을 통해 다이나믹 프로그래밍을 구현할 수 있습니다.  
 
 #### Top-down VS Bottom-up
 
@@ -55,16 +55,16 @@ Baekjoon Online Judge 초급 Ch03. 다이나믹 프로그래밍 1
     3. 큰 문제를 풉니다
 
 ~~~ cpp
-int dp[100];
+int d[100];
 int fibonacci(int n) {
     if ( n <= 1 ) {
         return n;
     } else {
-        if ( dp[n] > 0 ) {
-            return dp[n];
+        if ( d[n] > 0 ) {
+            return d[n];
         }
-        dp[n] = fibonacci(n - 1) + fibonacci(n - 2);
-        return dp[n];
+        d[n] = fibonacci(n - 1) + fibonacci(n - 2);
+        return d[n];
     }
 }
 ~~~
@@ -75,15 +75,15 @@ int fibonacci(int n) {
     작은 문제부터 원하는 값을 구할 때까지 차례대로 풀이합니다.  
 
 ~~~ cpp
-int dp[100];
+int d[100];
 int fibonacci(int n) {
-    dp[0] = 0;
-    dp[1] = 1;
+    d[0] = 0;
+    d[1] = 1;
 
     for ( int i = 2; i <= n; i++ ) {
-        dp[i] = dp[i - 1] + dp[i - 2];
+        d[i] = d[i - 1] + d[i - 2];
     }
 
-    return dp[n];
+    return d[n];
 }
 ~~~

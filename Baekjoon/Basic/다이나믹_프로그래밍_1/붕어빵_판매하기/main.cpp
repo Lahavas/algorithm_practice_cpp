@@ -8,19 +8,19 @@ int main()
     int n = 0;
     cin >> n;
 
-    vector<int> arr(n + 1, 0);
-    for ( int i = 1; i <= n; i++ ) {
-        cin >> arr[i];
+    vector<int> p(n + 1, 0);
+    for ( int i = 1; i <= n; ++i ) {
+        cin >> p[i];
     }
 
-    vector<int> des(n + 1, 0);
-    for ( int i = 1; i <= n; i++ ) {
-        for ( int j = 1; j <= i; j++ ) {
-            res[i] = max(des[i], des[i - j] + arr[j]);
+    vector<int> d(n + 1, 0);
+    for ( int i = 1; i <= n; ++i ) {
+        for ( int j = 1; j <= i; ++j ) {
+            d[i] = max(d[i], d[i - j] + p[j]);
         }
     }
 
-    cout << des[n] << endl;
+    cout << d[n] << '\n';
 
     return 0;
 }

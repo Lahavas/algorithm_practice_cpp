@@ -1,48 +1,53 @@
 1463번 1로 만들기
 --------------
 
+D[N]은 N을 1로 만드는 데 필요한 연산의 최솟값이라고 정의할 수 있습니다.  
+조건이 세 가지 방법 중에 최소값을 구하는 방법이므로, D[N] = min(D[N/3]+1, D[N/2]+1, D[N-1]+1) 이라고 할 수 있습니다.
+
 1. Top-down 방식으로 풀이
 
 ~~~cpp
 #include <cstdio>
 
-#define MAX 1000001
+constexpr int MAX = 1000001;
 
-int arr[MAX] = { 0 };
+int d[MAX] = { 0 };
 
-int makeOne(int n) {
+int solve(int n) 
+{
     if ( n == 1 ) {
         return 0;
     }
 
-    if ( arr[n] > 0 ) {
-        return arr[n];
+    if ( d[n] > 0 ) {
+        return d[n];
     }
 
-    arr[n] = makeOne(n - 1) + 1;
+    d[n] = solve(n - 1) + 1;
 
     if ( n % 2 == 0 ) {
-        int temp = makeOne(n / 2) + 1;
-        if ( arr[n] > temp ) {
-            arr[n] = temp;
+        int temp = solve(n / 2) + 1;
+        if ( d[n] > temp ) {
+            d[n] = temp;
         }
     }
 
     if ( n % 3 == 0 ) {
-        int temp = makeOne(n / 3) + 1;
-        if ( arr[n] > temp ) {
-            arr[n] = temp;
+        int temp = solve(n / 3) + 1;
+        if ( d[n] > temp ) {
+            d[n] = temp;
         }
     }
 
-    return arr[n];
+    return d[n];
 }
 
-int main() {
-    int n;
+int main() 
+{
+    int n = 0;
     scanf("%d", &n);
 
-    int result = makeOne(n);
+    int result = solve(n);
 
     printf("%d\n", result);
 
@@ -55,36 +60,33 @@ int main() {
 ~~~ cpp
 #include <cstdio>
 
-#define MAX 1000001
+constexpr int MAX = 1000001;
 
-int arr[MAX] = { 0 };
+int d[MAX] = { 0 };
 
-int makeOne(int n) {
-    for ( int i = 1; i <= n; i++ ) {
+int main() 
+{
+    int n = 0;
+    scanf("%d", &n);
+
+    for ( int i = 1; i <= n; ++i ) {
         if ( i == 1 ) {
-            arr[i] = 0;
+            d[i] = 0;
             continue;
         }
 
-        arr[i] = arr[i - 1] + 1;
+        d[i] = d[i - 1] + 1;
 
-        if ( i % 2 == 0 && arr[i] > arr[i / 2] + 1 ) {
-            arr[i] = arr[i / 2] + 1;
+        if ( i % 2 == 0 && d[i] > d[i / 2] + 1 ) {
+            d[i] = d[i / 2] + 1;
         }
 
-        if ( i % 3 == 0 && arr[i] > arr[i / 3] + 1 ) {
-            arr[i] = arr[i / 3] + 1;
+        if ( i % 3 == 0 && d[i] > d[i / 3] + 1 ) {
+            d[i] = d[i / 3] + 1;
         }
     }
 
-    return arr[n];
-}
-
-int main() {
-    int n;
-    scanf("%d", &n);
-
-    int result = makeOne(n);
+    int result = d[n];
 
     printf("%d\n", result);
 

@@ -1,35 +1,32 @@
 #include <cstdio>
 
-#define MAX 1000001
+constexpr int MAX = 1000001;
 
-int arr[MAX] = { 0 };
+int d[MAX] = { 0 };
 
-int makeOne(int n) {
-    for ( int i = 1; i <= n; i++ ) {
+int main() 
+{
+    int n = 0;
+    scanf("%d", &n);
+
+    for ( int i = 1; i <= n; ++i ) {
         if ( i == 1 ) {
-            arr[i] = 0;
+            d[i] = 0;
             continue;
         }
 
-        arr[i] = arr[i - 1] + 1;
+        d[i] = d[i - 1] + 1;
 
-        if ( i % 2 == 0 && arr[i] > arr[i / 2] + 1 ) {
-            arr[i] = arr[i / 2] + 1;
+        if ( i % 2 == 0 && d[i] > d[i / 2] + 1 ) {
+            d[i] = d[i / 2] + 1;
         }
 
-        if ( i % 3 == 0 && arr[i] > arr[i / 3] + 1 ) {
-            arr[i] = arr[i / 3] + 1;
+        if ( i % 3 == 0 && d[i] > d[i / 3] + 1 ) {
+            d[i] = d[i / 3] + 1;
         }
     }
 
-    return arr[n];
-}
-
-int main() {
-    int n;
-    scanf("%d", &n);
-
-    int result = makeOne(n);
+    int result = d[n];
 
     printf("%d\n", result);
 

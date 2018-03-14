@@ -1,38 +1,31 @@
 #include <cstdio>
 
-#define MAX 11
+constexpr int MAX = 11;
 
-int arr[MAX] = { 0 };
-
-int addNum(int n)
-{
-    if ( n == 1 ) {
-        return 1;
-    } else if ( n == 2 ) {
-        return 2;
-    } else if ( n == 3 ) {
-        return 4;
-    } else {
-        if ( arr[n] > 0 ) {
-            return arr[n];
-        }
-
-        arr[n] = addNum(n - 1) + addNum(n - 2) + addNum(n - 3);
-
-        return arr[n];
-    }
-}
+int d[MAX] = { 0 };
 
 int main()
 {
-    int ts = 0;
-    scanf("%d", &ts);
+    int cnt = 0;
+    scanf("%d", &cnt);
 
-    while ( ts-- ) {
+    while ( cnt-- ) {
         int n = 0;
         scanf("%d", &n);
+
+        for ( int i = 1; i <= n; ++i ) {
+            if ( i == 1 ) {
+                d[i] = 1;
+            } else if ( i == 2 ) {
+                d[i] = 2;
+            } else if ( i == 3 ) {
+                d[i] = 4;
+            } else {
+                d[i] = d[i - 1] + d[i - 2] + d[i - 3];
+            }
+        }
         
-        int result = addNum(n);
+        int result = d[n];
         printf("%d\n", result);
     }
 

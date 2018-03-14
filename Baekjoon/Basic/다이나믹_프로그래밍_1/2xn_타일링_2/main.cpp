@@ -1,35 +1,28 @@
 #include <cstdio>
 
-#define MAX 1001
-#define DIVIDE 10007
+constexpr int MAX = 1001;
+constexpr int mod = 10007;
 
-int arr[MAX] = { 0 };
+int d[MAX] = { 0 };
 
-int twoTimesN(int n) {
-
-    for ( int i = 1; i <= n; i++ ) {
-
-        if ( i == 1 ) {
-            arr[i] = 1;
-        } else if ( i == 2 ) {
-            arr[i] = 3;
-        } else {
-            arr[i] = arr[i - 1] + arr[i - 2] * 2;
-        }
-
-        if ( arr[i] > DIVIDE ) {
-            arr[i] %= DIVIDE;
-        }
-    }
-
-    return arr[n];
-}
-
-int main() {
-    int n;
+int main() 
+{
+    int n = 0;
     scanf("%d", &n);
 
-    int result = twoTimesN(n);
+    for ( int i = 1; i <= n; ++i ) {
+        if ( i == 1 ) {
+            d[i] = 1;
+        } else if ( i == 2 ) {
+            d[i] = 3;
+        } else {
+            d[i] = d[i - 1] + d[i - 2] * 2;
+        }
+
+        d[i] %= mod;
+    }
+
+    int result = d[n];
     printf("%d\n", result);
 
     return 0;
