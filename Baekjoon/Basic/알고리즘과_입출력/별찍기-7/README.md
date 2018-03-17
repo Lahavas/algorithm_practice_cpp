@@ -29,10 +29,10 @@ int main()
                 for ( int k = 1; k <= (x * 2) - 1; ++k ) {
                     cout << '*';
                 }
-                cout << '\n';
                 break;
             }   
         }
+        cout << '\n';
     }
     
     return 0;
@@ -59,10 +59,10 @@ int main()
                 for ( int k = 1; k <= (x * 2) - 1; ++k ) {
                     putchar('*');
                 }
-                putchar('\n');
                 break;
             }
         }
+        putchar('\n');
     }
 
     return 0;

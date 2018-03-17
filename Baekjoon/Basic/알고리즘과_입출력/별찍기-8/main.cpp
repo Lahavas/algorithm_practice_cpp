@@ -5,25 +5,25 @@ using namespace std;
 int main()
 {
     ios_base::sync_with_stdio(false);
-    
+
     int n = 0;
     cin >> n;
-    
+
     for ( int i = 1; i <= (n * 2) - 1; ++i ) {
         int x = (i <= n ? i : (n * 2) - i);
-        
-        for ( int j = 0; j < (n * 2) - 1; ++j ) {
-            if ( j + x < n ) {
-                cout << ' ';
+
+        for ( int j = 1; j <= (n * 2); ++j ) {
+            int y = (j <= n ? j : (n * 2) - j + 1);
+
+            if ( x >= y ) {
+                cout << '*';
             } else {
-                for ( int k = 1; k <= (x * 2) - 1; ++k ) {
-                    cout << '*';
-                }
-                break;
-            }   
+                cout << ' ';
+            }
         }
+
         cout << '\n';
     }
-    
+
     return 0;
 }
