@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
     cin >> n;
     
@@ -34,14 +36,14 @@ int main()
         }
     }
 
-    int result = 0;
+    int res = 0;
     for ( int i = 0; i < n; ++i ) {
-        if ( result < d_inc[i] + d_dec[i] - 1 ) {
-            result = d_inc[i] + d_dec[i] - 1;
+        if ( res < d_inc[i] + d_dec[i] - 1 ) {
+            res = d_inc[i] + d_dec[i] - 1;
         }
     }
     
-    cout << result << endl;
+    cout << res << '\n';
     
     return 0;
 }

@@ -6,6 +6,8 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
     cin >> n;
     
@@ -25,7 +27,7 @@ int main()
         }
     }
     
-    cout << *max_element(d.begin(), d.end()) << endl;
+    cout << *max_element(d.begin(), d.end()) << '\n';
     
     return 0;
 }
