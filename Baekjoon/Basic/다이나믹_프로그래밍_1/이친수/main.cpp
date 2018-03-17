@@ -1,6 +1,6 @@
 #include <cstdio>
 
-#define MAX 91
+constexpr int MAX = 91;
 
 long d[MAX][2] = { 0 };
 
@@ -9,7 +9,7 @@ int main()
     int n = 0;
     scanf("%d", &n);
 
-    for ( int i = 1; i <= n; i++ ) {
+    for ( int i = 1; i <= n; ++i ) {
         if ( i == 1 ) {
             d[i][1] = 1;
             continue;
