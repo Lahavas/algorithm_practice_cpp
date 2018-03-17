@@ -1,5 +1,5 @@
-2445번 별찍기 - 8
---------------- 
+2522번 별찍기 - 12
+----------------
 
 1. iostream header를 사용하여 입출력
 
@@ -18,16 +18,13 @@ int main()
     for ( int i = 1; i <= (n * 2) - 1; ++i ) {
         int x = (i <= n ? i : (n * 2) - i);
 
-        for ( int j = 1; j <= n * 2; ++j ) {
-            int y = (j <= n ? j : (n * 2) - j + 1);
-
-            if ( x >= y ) {
+        for ( int j = 1; j <= n; ++j ) {
+            if ( x + j >= n + 1 ) {
                 cout << '*';
             } else {
                 cout << ' ';
             }
         }
-
         cout << '\n';
     }
 
@@ -48,16 +45,13 @@ int main()
     for ( int i = 1; i <= (n * 2) - 1; ++i ) {
         int x = (i <= n ? i : (n * 2) - i);
 
-        for ( int j = 1; j <= n * 2; ++j ) {
-            int y = (j <= n ? j : (n * 2) - j + 1);
-
-            if ( x >= y ) {
+        for ( int j = 1; j <= n; ++j ) {
+            if ( x + j >= n + 1 ) {
                 putchar('*');
             } else {
                 putchar(' ');
             }
         }
-
         putchar('\n');
     }
 
