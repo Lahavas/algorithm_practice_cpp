@@ -7,6 +7,8 @@ constexpr long mod = 1000000;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     string s = "";
     cin >> s;
     
@@ -29,11 +31,12 @@ int main()
         x = (s[i - 1] - '0') * 10 + (s[i] - '0');
         if ( x >= 10 && x <= 26 ) {
             d[i] += d[i - 2];
-            d[i] %= mod;
         }
+        
+        d[i] %= mod;        
     }
     
-    cout << d[n] << endl;
+    cout << d[n] << '\n';
     
     return 0;
 }

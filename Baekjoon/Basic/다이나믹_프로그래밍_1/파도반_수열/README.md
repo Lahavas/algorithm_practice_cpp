@@ -1,6 +1,9 @@
 9461번 파도반 수열
 ---------------
 
+해당 문제는 그림을 보고 규칙을 찾아 문제를 해결할 수 있습니다.  
+D[N] = D[N-1] + D[N-5], (N >= 11) 이라고 할 수 있습니다.
+
 ~~~ cpp
 #include <iostream>
 
@@ -12,6 +15,8 @@ long d[size] = { 0, 1, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12 };
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int cnt = 0;
     cin >> cnt;
     
@@ -23,7 +28,7 @@ int main()
             d[i] = d[i - 1] + d[i - 5];
         }
         
-        cout << d[n] << endl;
+        cout << d[n] << '\n';
     }
     
     return 0;

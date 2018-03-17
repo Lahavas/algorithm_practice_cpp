@@ -3,15 +3,15 @@
 using namespace std;
 
 constexpr long mod = 1000000000;
-constexpr int size = 201;
+constexpr int SIZE = 201;
 
-long long d[size][size] = { 0 };
+long long d[SIZE][SIZE] = { 0 };
 
 int main()
 {
-    int n = 0;
-    int k = 0;
-    
+    ios_base::sync_with_stdio(false);
+
+    int n = 0, k = 0;
     cin >> n >> k;
     
     d[0][0] = 1;
@@ -25,7 +25,7 @@ int main()
         }
     }
     
-    cout << d[k][n] << endl;
+    cout << d[k][n] << '\n';
     
     return 0;
 }

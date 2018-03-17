@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
     cin >> n;
     
@@ -19,7 +21,7 @@ int main()
         }
     }
     
-    cout << d[n] << endl;
+    cout << d[n] << '\n';
     
     return 0;
 }

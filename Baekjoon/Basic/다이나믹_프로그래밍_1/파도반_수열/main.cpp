@@ -2,12 +2,14 @@
 
 using namespace std;
 
-constexpr int size = 101;
+constexpr int SIZE = 101;
 
-long d[size] = { 0, 1, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12 };
+long d[SIZE] = { 0, 1, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12 };
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int cnt = 0;
     cin >> cnt;
     
@@ -19,7 +21,7 @@ int main()
             d[i] = d[i - 1] + d[i - 5];
         }
         
-        cout << d[n] << endl;
+        cout << d[n] << '\n';
     }
     
     return 0;
