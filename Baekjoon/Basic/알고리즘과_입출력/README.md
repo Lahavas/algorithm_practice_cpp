@@ -37,7 +37,7 @@ Baekjoon Online Judge 초급 Ch01. 알고리즘과 입출력
 * [별찍기 - 8](./별찍기-8) [[2445번 상세보기](https://www.acmicpc.net/problem/2445)]
 * [별찍기 - 9](./별찍기-9) [[2446번 상세보기](https://www.acmicpc.net/problem/2446)]
 * [별찍기 - 12](./별찍기-12) [[2522번 상세보기](https://www.acmicpc.net/problem/2522)]
-* 별찍기 - 16 [[10991번 상세보기](https://www.acmicpc.net/problem/10991)]
+* [별찍기 - 16](./별찍기-16) [[10991번 상세보기](https://www.acmicpc.net/problem/10991)]
 * 별찍기 - 17 [[10992번 상세보기](https://www.acmicpc.net/problem/10992)]
 
 ### 풀이 전 알아야 할 개념
