@@ -12,8 +12,8 @@ int main()
     for ( int i = 1; i <= (n * 2) - 1; ++i ) {
         int x = (i <= n ? i : (n * 2) - i);
 
-        for ( int j = 1; j <= n; ++j ) {
-            if ( x + j >= n + 1 ) {
+        for ( int t = 1; t <= n; ++t ) {
+            if ( x + t >= n + 1 ) {
                 cout << '*';
             } else {
                 cout << ' ';

@@ -15,12 +15,12 @@ int main()
     int n = 0;
     cin >> n;
 
-    for ( int i = 1; i < n; ++i ) {
-        for ( int j = 1; j <= n - i; ++j ) {
+    for ( int i = 1; i <= n; ++i ) {
+        for ( int s = 1; s <= n - i; ++s ) {
             cout << ' ';
         }
-        for ( int k = 1; k <= (i * 2) - 1; ++k ) {
-            if ( k == 1 || k == (i * 2) - 1 ) {
+        for ( int t = 1; t <= (i * 2) - 1; ++t ) {
+            if ( t == 1 || t == (i * 2) - 1 ) {
                 cout << '*';
             } else {
                 cout << ' ';
@@ -49,11 +49,11 @@ int main()
     scanf("%d", &n);
 
     for ( int i = 1; i < n; ++i ) {
-        for ( int j = 1; j <= n - i; ++j ) {
+        for ( int s = 1; s <= n - i; ++s ) {
             putchar(' ');
         }
-        for ( int k = 1; k <= (i * 2) - 1; ++k ) {
-            if ( k == 1 || k == (i * 2) - 1 ) {
+        for ( int t = 1; t <= (i * 2) - 1; ++t ) {
+            if ( t == 1 || t == (i * 2) - 1 ) {
                 putchar('*');
             } else {
                 putchar(' ');
