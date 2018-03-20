@@ -14,6 +14,8 @@ int gcd(int a, int b)
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int cnt = 0;
     cin >> cnt;
     
@@ -22,7 +24,6 @@ int main()
         cin >> n;
         
         vector<long> a(n, 0);
-        
         for ( int i = 0; i < n; ++i ){
             cin >> a[i];
         }
@@ -33,7 +34,8 @@ int main()
                 sum += gcd(a[i], a[j]);
             }
         }
-        cout << sum << endl;
+
+        cout << sum << '\n';
     }
     
     return 0;

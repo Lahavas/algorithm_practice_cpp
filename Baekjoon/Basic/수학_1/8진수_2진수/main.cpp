@@ -9,16 +9,16 @@ string eight[8] = { "000", "001", "010", "011",
 
 int main()
 {
-    string s = "";
+    string s;
     cin >> s;
     
     bool start = true;
     
-    if ( s.length() == 1 && s[0] - '0' == 0 ) {
+    if ( s.size() == 1 && s[0] - '0' == 0 ) {
         cout << "0";
     }
     
-    for ( int i = 0; i < s.length(); ++i ) {
+    for ( int i = 0; i < s.size(); ++i ) {
         int n = s[i] - '0';
         
         if ( start == true && n < 4 ) {

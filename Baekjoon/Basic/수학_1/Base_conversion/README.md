@@ -1,6 +1,9 @@
 11576번 Base Conversion
 -----------------------
 
+A진법의 수를 B진법의 수로 바꿔 출력하는 문제입니다.  
+A진수 -> 10진수 -> B진수로 바꿔 출력해서 풀이할 수 있습니다.
+
 ~~~ cpp
 #include <iostream>
 
@@ -18,6 +21,8 @@ void convert(int num, int base)
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int a = 0, b = 0;
     cin >> a >> b;
     

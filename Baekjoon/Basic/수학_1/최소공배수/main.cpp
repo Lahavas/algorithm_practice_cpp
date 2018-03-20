@@ -13,6 +13,8 @@ int gcd(int a, int b)
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int cnt = 0;
     cin >> cnt;
     
@@ -23,7 +25,7 @@ int main()
         int g = gcd(a, b);
         int l = (a * b) / g;
         
-        cout << l << endl;
+        cout << l << '\n';
     }
     
     return 0;

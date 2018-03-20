@@ -5,7 +5,9 @@ using namespace std;
 
 int main()
 {
-    string n = "";
+    ios_base::sync_with_stdio(false);
+
+    string n;
     int b = 0;
     
     cin >> n >> b;
@@ -20,7 +22,7 @@ int main()
         }
     }
     
-    cout << res << endl;
+    cout << res << '\n';
     
     return 0;
 }

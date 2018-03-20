@@ -24,14 +24,16 @@ void convert(int n)
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
     cin >> n;
     
     if ( n == 0 ) {
-        cout << "0" << endl;
+        cout << "0" << '\n';
     } else {
         convert(n);
-        cout << endl;
+        cout << '\n';
     }
     
     return 0;

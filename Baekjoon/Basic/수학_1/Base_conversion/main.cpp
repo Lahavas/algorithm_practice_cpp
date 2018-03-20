@@ -14,6 +14,8 @@ void convert(int num, int base)
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int a = 0, b = 0;
     cin >> a >> b;
     

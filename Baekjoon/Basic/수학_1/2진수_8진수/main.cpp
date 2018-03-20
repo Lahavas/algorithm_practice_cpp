@@ -5,7 +5,9 @@ using namespace std;
 
 int main()
 {
-    string s = "";
+    ios_base::sync_with_stdio(false);
+
+    string s;
     cin >> s;
     
     int n = s.size();
@@ -20,7 +22,7 @@ int main()
         cout << (s[i] - '0') * 4 + (s[i + 1] - '0') * 2 + (s[i + 2] - '0');
     }
     
-    cout << endl;
+    cout << '\n';
     
     return 0;
 }
