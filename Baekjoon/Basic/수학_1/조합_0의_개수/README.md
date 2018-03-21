@@ -38,7 +38,7 @@ int main()
         five -= (m / i);
     }
     
-    cout << min(two, five) << endl;
+    cout << min(two, five) << '\n';
     
     return 0;
 }
