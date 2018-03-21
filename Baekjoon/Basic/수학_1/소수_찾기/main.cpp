@@ -2,7 +2,8 @@
 
 using namespace std;
 
-bool prime(int n) {
+bool prime(int n) 
+{
     if ( n < 2 ) {
         return false;
     }
@@ -18,20 +19,22 @@ bool prime(int n) {
 
 int main() 
 {
-    int n = 0;
-    cin >> n;
+    ios_base::sync_with_stdio(false);
+
+    int cnt = 0;
+    cin >> cnt;
     
     int res = 0;
-    
-    for ( int i = 0; i < n; ++i ) {
-        int num = 0;
-        cin >> num;
-        if ( prime(num) == true ) {
+
+    while ( cnt-- ) {
+        int n = 0;
+        cin >> n;
+        if ( prime(n) == true ) {
             ++res;
         }
     }
     
-    cout << res << endl;
+    cout << res << '\n';
     
     return 0;
 }

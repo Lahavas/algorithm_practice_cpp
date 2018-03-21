@@ -1,6 +1,6 @@
 #include <cstdio>
 
-const int MAX = 1000000;
+constexpr int MAX = 1000000;
 
 int prime[MAX] = { 0 };
 int pn = 0;
@@ -14,7 +14,7 @@ int main()
     for ( int i = 2; i * i <= MAX; ++i ) {
         if ( check[i] == false ) {
             prime[pn++] = i;
-            for ( int j = i * i; j <= MAX; j += i ) {
+            for ( int j = i + i; j <= MAX; j += i ) {
                 check[j] = true;
             }
         }

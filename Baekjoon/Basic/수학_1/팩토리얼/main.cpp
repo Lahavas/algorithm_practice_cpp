@@ -4,6 +4,8 @@ using namespace std;
 
 int main() 
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
     cin >> n;
     
@@ -12,7 +14,7 @@ int main()
         res *= i;
     }
     
-    cout << res << endl;
+    cout << res << '\n';
     
     return 0;
 }

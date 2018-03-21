@@ -8,12 +8,14 @@ bool check[MAX + 1] = { false };
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     check[0] = true;
     check[1] = true;
     
     for ( int i = 2; i * i <= MAX; ++i ) {
         if ( check[i] == false ) {
-            for ( int j = i * i; j <= MAX; j += i ) {
+            for ( int j = i + i; j <= MAX; j += i ) {
                 check[j] = true;
             }
         }

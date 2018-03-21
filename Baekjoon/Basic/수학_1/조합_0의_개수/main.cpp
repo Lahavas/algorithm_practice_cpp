@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     long two = 0, five = 0;
     long n = 0, m = 0;
     cin >> n >> m;
@@ -29,7 +31,7 @@ int main()
         five -= (m / i);
     }
     
-    cout << min(two, five) << endl;
+    cout << min(two, five) << '\n';
     
     return 0;
 }
