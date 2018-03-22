@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -6,12 +6,14 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
-    scanf("%d", &n);
+    cin >> n;
     
     vector<pair<int, int>> a(n);
     for ( int i = 0; i < n; ++i ) {
-        scanf("%d", &a[i].first);
+        cin >> a[i].first;
         a[i].second = i;
     }
     
@@ -24,6 +26,6 @@ int main()
         }
     }
     
-    printf("%d\n", res + 1);
+    cout << res + 1 << '\n';
     return 0;
 }

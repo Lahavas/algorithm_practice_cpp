@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -6,15 +6,17 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
-    scanf("%d", &n);
+    cin >> n;
     
     vector<long long> a(n, 0);
     for ( int i = 0; i < n; ++i ) {
-        scanf("%lld", &a[i]);
+        cin >> a[i];
     }
     
-    sort(a, a + n);
+    sort(a.begin(), a.end());
     
     long long max = a[0];
     int max_cnt = 1;
@@ -33,7 +35,7 @@ int main()
         }
     }
     
-    printf("%lld\n", max);
+    cout << max << '\n';
     
     return 0;
 }
