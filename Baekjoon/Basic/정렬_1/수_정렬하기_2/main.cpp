@@ -1,22 +1,26 @@
-#include <cstdio>
+#include <iostream>
+#include <vector>
 #include <algorithm>
 
-constexpr int MAX = 1000000;
-
-int a[MAX] = { 0 };
+using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    
     int n = 0;
-    scanf("%d", &n);
+    cin >> n;
+    
+    vector<int> a(n, 0);
+    
     for ( int i = 0; i < n; ++i ) {
-        scanf("%d", &a[i]);
+        cin >> a[i];
     }
     
-    std::sort(a, a + n);
+    sort(a.begin(), a.end());
     
-    for ( int i = 0; i < n; ++i ) {
-        printf("%d\n", a[i]);
+    for ( auto p : a ) {
+        cout << p << '\n';
     }
     
     return 0;

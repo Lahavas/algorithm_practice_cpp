@@ -14,9 +14,8 @@ int main()
         scanf("%d %d", &a[i].first, &a[i].second);
     }
     
-    sort(a.begin(), a.end(), 
-        [](const pair<int, int> &u, const pair<int, int> &v) {
-           return u.second == v.second ? u.first < v.first : u.second < v.second; 
+    sort(a.begin(), a.end(), [](const pair<int, int> &u, const pair<int, int> &v) {
+        return u.second == v.second ? u.first < v.first : u.second < v.second; 
         });
     
     for ( auto &p : a ) {

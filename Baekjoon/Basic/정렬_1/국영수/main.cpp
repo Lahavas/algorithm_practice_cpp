@@ -7,13 +7,19 @@ using namespace std;
 
 struct Person {
     string name;
-    int kor;
-    int eng;
-    int math;
+    int kor, eng, math;
+
+    Person() {
+        kor = 0;
+        eng = 0;
+        math = 0;
+    }
 };
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+
     int n = 0;
     cin >> n;
     
@@ -24,20 +30,19 @@ int main()
     }
     
     sort(a.begin(), a.end(), [](const Person &u, const Person &v) {
-        if ( u.kor > v.kor ) {
-            return true;
-        } else if ( u.kor == v.kor ) {
-            if ( u.eng < v.eng ) {
-                return true;
-            } else if ( u.eng == v.eng ) {
-                if ( u.math > v.math ) {
-                    return true;
-                } else if ( u.math == v.math ) {
+        if ( u.kor == v.kor ) {
+            if ( u.eng == v.eng ) {
+                if ( u.math == v.math ) {
                     return u.name < v.name;
+                } else {
+                    return u.math > v.math;
                 }
+            } else {
+                return u.eng < v.eng;
             }
+        } else {
+            return u.kor > v.kor;
         }
-        return false;
     });
     
     for ( auto &p : a ) {

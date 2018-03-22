@@ -60,8 +60,8 @@ using namespace std;
 constexpr int MAX = 10000;
 
 struct Stack {
-    int data[MAX] = { 0 };
-    int size = 0;
+    int data[MAX];
+    int size;
 
     Stack() {
         data[MAX] = { 0 };

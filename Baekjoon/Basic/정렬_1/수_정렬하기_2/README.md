@@ -1,28 +1,36 @@
 2751번 수 정렬하기 2
 -----------------
 
+N개의 수를 정렬한 기본적인 정렬 문제입니다.  
+STL에서 제공하는 sort 함수를 사용하는 방법 이외에도,  
+Quick Sort와 Merge Sort 등을 직접 구현하여 문제를 해결할 수 있습니다.
+
 1. STL에서 제공하는 sort 함수 사용하기
 
 ~~~ cpp
-#include <cstdio>
+#include <iostream>
+#include <vector>
 #include <algorithm>
 
-constexpr int MAX = 1000000;
-
-int a[MAX] = { 0 };
+using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    
     int n = 0;
-    scanf("%d", &n);
+    cin >> n;
+    
+    vector<int> a(n, 0);
+    
     for ( int i = 0; i < n; ++i ) {
-        scanf("%d", &a[i]);
+        cin >> a[i];
     }
     
-    std::sort(a, a + n);
+    sort(a.begin(), a.end());
     
-    for ( int i = 0; i < n; ++i ) {
-        printf("%d\n", a[i]);
+    for ( auto p : a ) {
+        cout << p << '\n';
     }
     
     return 0;
@@ -47,7 +55,7 @@ void swap(int &x, int &y)
 
 int choosePivot(int low, int high) 
 {
-    return low + (high-low)/2;
+    return low + (high - low) / 2;
 }
 
 int partition(int low, int high) 
@@ -72,21 +80,21 @@ void quicksort(int low, int high)
 {
     if ( low < high ) {
         int pivot = partition(low, high);
-        quicksort(low, pivot-1);
-        quicksort(pivot+1, high);
+        quicksort(low, pivot - 1);
+        quicksort(pivot + 1, high);
     }
 }
 
 int main() 
 {
-    int n;
+    int n = 0;
     scanf("%d", &n);
 
     for ( int i = 0; i < n; ++i ) {
         scanf("%d", &a[i]);
     }
 
-    quicksort(0, n-1);
+    quicksort(0, n - 1);
 
     for ( int i = 0; i < n; ++i ) {
         printf("%d\n", a[i]);
@@ -155,14 +163,14 @@ void mergesort(int start, int end)
 
 int main() 
 {
-    int n;
+    int n = 0;
     scanf("%d", &n);
 
     for ( int i = 0; i < n; ++i ) {
         scanf("%d", &a[i]);
     }
 
-    mergesort(0, n-1);
+    mergesort(0, n - 1);
 
     for ( int i = 0; i < n; ++i ) {
         printf("%d\n", a[i]);

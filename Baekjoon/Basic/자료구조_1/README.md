@@ -23,26 +23,26 @@ Baekjoon Online Judge 초급 Ch02. 자료구조 1
 
 ### 풀이 전 알아야 할 개념
 
-#### 스택
+#### 스택 (Stack)
 
 스택은 LIFO 방식으로 데이터를 처리하는 자료구조입니다.  
 대표적인 연산은 push, pop, top, empty, size 가 있습니다.  
 스택은 array를 이용해 구현할 수 있으며, STL에 구현되어 있는 stack을 사용하는 쪽을 더욱 추천합니다.  
 스택에 대한 구체적인 구현 방식은 [스택](./스택) 을 참고하시면 됩니다.
 
-#### 큐
+#### 큐 (Queue)
 
 큐는 FIFO 방식으로 데이터를 처리하는 자료구조입니다.  
 대표적인 연산은 push, pop, front, empty, size 가 있습니다.  
 큐는 array를 이용해 구현할 수 있으며, STL에 구현되어 있는 queue를 사용하는 쪽을 더욱 추천합니다.  
 큐에 대한 구체적인 구현 방식은 [큐](./큐) 을 참고하시면 됩니다.
 
-#### 덱
+#### 덱 (Dequeue)
 
 덱은 Double-ended queue의 약자입니다.  
 대표적인 연산은 push_front, push_back, pop_front, pop_back, front, back 등이 있습니다.  
 
-#### 문자열
+#### 문자열 (String Literal)
 
 아스키코드는 문자의 인코딩 방법입니다.  
 '0' = 48, 'A' = 65, 'a' = 97, NULL = 0 을 나타냅니다.  

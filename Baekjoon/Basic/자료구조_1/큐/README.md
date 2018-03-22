@@ -62,10 +62,11 @@ using namespace std;
 constexpr int MAX = 10000;
 
 struct Queue {
-    int data[MAX] = { 0 };
-    int begin = 0, end = 0;
+    int data[MAX];
+    int begin, end;
 
     Queue() {
+        data[MAX] = { 0 };
         begin = 0;
         end = 0;
     }
