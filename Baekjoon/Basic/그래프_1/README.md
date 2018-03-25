@@ -6,7 +6,7 @@ Baekjoon Online Judge 초급 Ch06. 그래프 1
 
 #### 문제
 
-* DFS와 BFS [[1260번 상세보기](https://www.acmicpc.net/problem/1260)]
+* [DFS와 BFS](./DFS와_BFS) [[1260번 상세보기](https://www.acmicpc.net/problem/1260)]
 * 연결 요소의 개수 [[11724번 상세보기](https://www.acmicpc.net/problem/11724)]
 * 이분 그래프 [[1707번 상세보기](https://www.acmicpc.net/problem/1707)]
 * 순열 사이클 [[10451번 상세보기](https://www.acmicpc.net/problem/10451)]
@@ -112,13 +112,51 @@ int main()
 
 세 번째 방법은 **간선 리스트 (Edge List)** 를 이용하여 그래프를 표현하는 방법입니다.  
 STL과 같은 라이브러리를 이용하지 못하는 등의 특수한 경우에 주로 사용되는 방법입니다.  
-일차원 배열을 이용하여 구현하며, 간선을 모두 저장합니다.  
+간선의 시작점과 끝점을 Element로 하는 구조체의 일차원 배열을 이용하여 구현하며, 간선을 모두 저장합니다.  
+이후 간선의 시작점의 갯수에 대한 배열을 두어 간선에 대한 Indexing을 통해 그래프를 탐색할 수 있습니다.  
 배열의 크기가 간선의 크기이기 때문에, O(E)만큼의 공간 복잡도가 들어갑니다.  
 
 다음 코드는 양방향 그래프이며, 가중치가 존재하는 경우에 간선 리스트를 사용하여 그래프를 표현한 코드입니다.  
 
 ~~~ cpp
+#include <cstdio>
 
+struct Edge {
+    int from, to;
+    int weight;
+
+    Edge() {
+        from = 0;
+        to = 0;
+        weight = 0;
+    }
+};
+
+Edge edge[10];
+int cnt[10];
+
+int main()
+{
+    int n = 0, m = 0;
+    scanf("%d %d", &n, &m);
+    
+    for ( int i = 0; i < m; ++i ) {
+        scanf("%d %d %d", &edge[i].from, &edge[i].to, &edge[i].weight);
+
+        edge[i + m].from = edge[i].to;
+        edge[i + m].to = edge[i].from;
+    }
+
+    m += 2;
+
+    for ( int i = 0; i < m; ++i ) {
+        cnt[edge[i].from] += 1;
+    }
+
+    for ( int i = 1; i <= n; ++i ) {
+        cnt[i] += cnt[i - 1];
+    }
+}
 ~~~
 
 #### 그래프의 탐색
