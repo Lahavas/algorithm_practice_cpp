@@ -7,7 +7,7 @@ Baekjoon Online Judge 초급 Ch06. 그래프 1
 #### 문제
 
 * [DFS와 BFS](./DFS와_BFS) [[1260번 상세보기](https://www.acmicpc.net/problem/1260)]
-* 연결 요소의 개수 [[11724번 상세보기](https://www.acmicpc.net/problem/11724)]
+* [연결 요소의 개수](./연결_요소의_개수) [[11724번 상세보기](https://www.acmicpc.net/problem/11724)]
 * 이분 그래프 [[1707번 상세보기](https://www.acmicpc.net/problem/1707)]
 * 순열 사이클 [[10451번 상세보기](https://www.acmicpc.net/problem/10451)]
 * 반복수열 [[2331번 상세보기](https://www.acmicpc.net/problem/2331)]
