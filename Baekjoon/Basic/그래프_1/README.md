@@ -258,3 +258,8 @@ while ( !q.empty() ) {
     }
 }
 ~~~
+
+#### 그래프의 연결 요소 (Connected Component)
+
+그래프에서 직접적으로 연결되어있는 정점의 집합을 그래프의 연결 요소 (Connected Component) 라고 합니다.  
+DFS와 BFS를 통해 인접해있는 정점끼리 체크를 하여 연결 요소를 구할 수 있습니다.  
