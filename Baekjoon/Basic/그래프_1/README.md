@@ -12,7 +12,7 @@ Baekjoon Online Judge 초급 Ch06. 그래프 1
 * [순열 사이클](./순열_사이클) [[10451번 상세보기](https://www.acmicpc.net/problem/10451)]
 * [반복수열](./반복수열) [[2331번 상세보기](https://www.acmicpc.net/problem/2331)]
 * [텀 프로젝트](./텀_프로젝트) [[9466번 상세보기](https://www.acmicpc.net/problem/9466)]
-* 단지번호붙이기 [[2667번 상세보기](https://www.acmicpc.net/problem/2667)]
+* [단지번호붙이기](./단지번호붙이기) [[2667번 상세보기](https://www.acmicpc.net/problem/2667)]
 * 섬의 개수 [[4963번 상세보기](https://www.acmicpc.net/problem/4963)]
 * 미로 탐색 [[2178번 상세보기](https://www.acmicpc.net/problem/2178)]
 * 토마토 [[7576번 상세보기](https://www.acmicpc.net/problem/7576)]
@@ -274,3 +274,9 @@ DFS와 BFS를 통해 인접해있는 정점끼리 체크를 하여 연결 요소
 * 모든 간선의 한 끝 점은 A에, 다른 끝 점은 B에 존재
 
 DFS와 BFS를 통해 이분 그래프의 여부를 알 수 있습니다.  
+
+#### 플러드 필 (Flood Fill)
+
+플러드 필 (Flood Fill) 은 어떤 위치와 연결된 모든 위치를 찾는 알고리즘입니다.  
+인접 행렬과 인접 리스트를 따로 만들지 않아도, 연결된 조건을 통해 특수한 연결 요소 (Connected Component) 를 찾는 방식으로 해결할 수 있습니다.  
+DFS와 BFS를 통해 그래프를 탐색하여 문제를 해결할 수 있습니다.  
