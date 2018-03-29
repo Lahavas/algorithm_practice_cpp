@@ -14,7 +14,7 @@ Baekjoon Online Judge 초급 Ch06. 그래프 1
 * [텀 프로젝트](./텀_프로젝트) [[9466번 상세보기](https://www.acmicpc.net/problem/9466)]
 * [단지번호붙이기](./단지번호붙이기) [[2667번 상세보기](https://www.acmicpc.net/problem/2667)]
 * [섬의 개수](./섬의_개수) [[4963번 상세보기](https://www.acmicpc.net/problem/4963)]
-* 미로 탐색 [[2178번 상세보기](https://www.acmicpc.net/problem/2178)]
+* [미로 탐색](./미로_탐색) [[2178번 상세보기](https://www.acmicpc.net/problem/2178)]
 * 토마토 [[7576번 상세보기](https://www.acmicpc.net/problem/7576)]
 * 다리 만들기 [[2146번 상세보기](https://www.acmicpc.net/problem/2146)]
 
