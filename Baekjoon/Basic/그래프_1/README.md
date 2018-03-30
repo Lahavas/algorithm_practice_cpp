@@ -16,7 +16,7 @@ Baekjoon Online Judge 초급 Ch06. 그래프 1
 * [섬의 개수](./섬의_개수) [[4963번 상세보기](https://www.acmicpc.net/problem/4963)]
 * [미로 탐색](./미로_탐색) [[2178번 상세보기](https://www.acmicpc.net/problem/2178)]
 * [토마토](./토마토) [[7576번 상세보기](https://www.acmicpc.net/problem/7576)]
-* 다리 만들기 [[2146번 상세보기](https://www.acmicpc.net/problem/2146)]
+* [다리 만들기](./다리_만들기) [[2146번 상세보기](https://www.acmicpc.net/problem/2146)]
 
 ### 풀이 전 알아야 할 개념
 

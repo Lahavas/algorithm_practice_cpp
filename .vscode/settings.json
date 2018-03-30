@@ -15,6 +15,7 @@
         "iostream": "cpp",
         "algorithm": "cpp",
         "typeinfo": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "cstdio": "cpp"
     }
 }
