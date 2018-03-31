@@ -6,7 +6,7 @@ Baekjoon Online Judge 초급 Ch07. 트리 1
 
 #### 문제
 
-* 트리 순회 [[1991번 상세보기](https://www.acmicpc.net/problem/1991)]
+* [트리 순회](./트리_순회) [[1991번 상세보기](https://www.acmicpc.net/problem/1991)]
 * 트리의 부모 찾기 [[11725번 상세보기](https://www.acmicpc.net/problem/11725)]
 * 트리의 지름 [[1167번 상세보기](https://www.acmicpc.net/problem/1167)]
 * 트리의 지름 [[1967번 상세보기](https://www.acmicpc.net/problem/1967)]
@@ -52,3 +52,30 @@ Baekjoon Online Judge 초급 Ch07. 트리 1
 이진 트리 (Binary Tree) 의 경우에는 배열을 통해 저장할 수 있습니다.  
 일차원 배열의 경우에는 부모 노드의 인덱스가 X인 경우에, 자식 노드의 인덱스는 2*X, 2*X + 1 로 나타내면 됩니다.  
 이차원 배열로 표현할 경우에는 부모 노드 I에 대하여 A[I][0]는 I의 왼쪽 자식 노드, A[I][1]은 I의 오른쪽 자식 노드를 저장할 수 있습니다.  
+
+#### 트리의 순회 (Tree Traversal)
+
+트리도 그래프의 일종이기 때문에 DFS와 BFS를 사용하여 순회가 가능하지만,  
+트리의 순회를 위한 세 가지의 방법이 존재합니다.  
+
+1. 전위 순회 (Preorder Traversal) 은 다음과 같은 순서로 진행이 됩니다.  
+
+    1. 노드를 방문  
+    2. 왼쪽 자식 노드를 루트로 하는 Subtree Preorder
+    3. 오른쪽 자식 노드를 루트로 하는 Subtree Preorder
+
+    전위 순회는 그래프의 DFS와 순서가 같습니다.  
+
+2. 중위 순회 (Inorder Travelsal) 은 다음과 같은 순서로 진행이 됩니다.  
+
+    1. 왼쪽 자식 노드를 루트로 하는 Subtree Inorder
+    2. 노드를 방문
+    3. 오른쪽 자식 노드를 루트로 하는 Subtree Inorder
+
+    중위 순회는 BST의 Delete 기능 구현에 주로 사용됩니다.  
+
+3. 후위 순회 (Postorder Travelsal) 은 다음과 같은 순서로 진행이 됩니다.  
+
+    1. 왼쪽 자식 노드를 루트로 하는 Subtree Postorder
+    2. 오른쪽 자식 노드를 루트로 하는 Subtree Postorder
+    3. 노드를 방문
