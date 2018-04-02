@@ -25,7 +25,7 @@ void bfs(int start)
         q.pop();
 
         for ( int next : a[node] ) {
-            if ( !check[next] ) {
+            if ( check[next] == false ) {
                 check[next] = true;
                 parent[next] = node;
                 q.push(next);
