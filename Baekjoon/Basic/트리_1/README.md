@@ -9,7 +9,7 @@ Baekjoon Online Judge 초급 Ch07. 트리 1
 * [트리 순회](./트리_순회) [[1991번 상세보기](https://www.acmicpc.net/problem/1991)]
 * [트리의 부모 찾기](./트리의_부모_찾기) [[11725번 상세보기](https://www.acmicpc.net/problem/11725)]
 * [트리의 지름](./트리의_지름_01) [[1167번 상세보기](https://www.acmicpc.net/problem/1167)]
-* 트리의 지름 [[1967번 상세보기](https://www.acmicpc.net/problem/1967)]
+* [트리의 지름](./트리의_지름_02) [[1967번 상세보기](https://www.acmicpc.net/problem/1967)]
 
 ### 풀이 전 알아야 할 개념
 
